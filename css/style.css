@@ -66,10 +66,9 @@ header{
     transform: translate(-50%, -50%);
     color: white;
     font-size: 2em;
+    text-align:center;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    
 }
 
 .main__heading a{
@@ -81,8 +80,19 @@ header{
     color: white;
     border-radius: 20px;
 }
-.secrewl{
-    position:fixed;
-   bottom:0;
-   right:0;
+
+  
+.main_heading_scroll{
+
+    font-size: .5em !important;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: #FFFAFA;
+    padding: 10px 20px;
+    color: black;
+    font-style:bold;
+    border-radius: 30px;
+    position:absolute;
+    bottom:0;
+    left:47%;
 }
