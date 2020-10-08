@@ -96,3 +96,39 @@ header{
     bottom:0;
     left:47%;
 }
+.what_we_do h1{
+    text-align:center;
+    color:#808080;
+    text-decoration: none;
+    font-weight:400;
+    font-size:2em;
+    
+
+}
+.what_we_do p{
+    text-align:center;
+    color:#808080;
+    text-decoration: none;
+    font-weight:200:
+    font-size:0.5em
+}
+.box1{
+    margin-top:6%;
+    margin-left:13%;
+    width:150px;
+    height:150px;
+    position:static;
+    background-color:#E8E8E8;
+    border-radius: 30px;
+    float:left;
+}
+.box2{
+    margin-top:6%;
+    margin-right:13%;
+    width:150px;
+    height:150px;
+    background-color:#E8E8E8;
+    border-radius: 30px;
+    float:right;
+}
+}S
