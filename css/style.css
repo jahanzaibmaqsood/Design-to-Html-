@@ -128,8 +128,63 @@ header{
 
 .box{
     background-color: #E8E8E8;
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;
+    height: 110px;
+    width: 110px;
+    border-radius: 20px;
     display: inline-block;
+}
+.box-container img{
+    padding-top:17px;
+    width:50:
+    height:50;
+}
+
+.discription{
+    width: 100%;
+    margin-top:1%;
+    
+}
+.text-box-size{
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+}
+.text-box{
+    height: 175px;
+    width: 300px;
+    display: inline-block;
+}
+.text-box h{
+    padding-top:10%;
+    font-weight: 1000;
+    font-size:100px
+    text-align: center;
+    color:#808080;
+
+}
+.text-box p{
+text-align:center;
+color:#808080;
+
+}
+.learn-more{
+    width:100%;
+    margin-top:1%;
+}
+.learn-more-box{
+    width:7%;
+    display:inline-block;
+    text-align:center;
+    background-color:#0BE757  ;
+    margin-left:13%;
+    border-radius: 8px;
+}
+
+.learn-more-size{
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+}
 }
