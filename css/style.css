@@ -167,24 +167,32 @@ text-align:center;
 color:#808080;
 
 }
-.learn-more{
-    width:100%;
-    margin-top:1%;
-}
-.learn-more-box{
-    width:7%;
-    display:inline-block;
-    text-align:center;
-    background-color:#0BE757  ;
-    margin-left:13%;
-    border-radius: 8px;
-}
+.learn-more-container{
+width:100%;
+margin-top: 0.2rem;
 
-.learn-more-size{
-    height: 10px;
-    width: 10px;
+}
+.learn-more-outer-box{
+
+    width: 33%;
     display: inline-block;
     text-align: center;
-    border-radius: 10px;
 }
+.learn-more-box{
+    background-color: #E8E8E8;
+    height: 25px;
+    width: 110px;
+    background-color:#0BE757 ;
+    border-radius: 20px;
+    display: inline-block;
+}
+.learn-more-container p{
+    text-align: center;
+    padding-bottom:10px ;
+    color:white;
+}
+.background-color{
+    width: 100%;
+    height:30%
+    background-color: #0BE757;
 }
