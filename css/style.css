@@ -187,12 +187,18 @@ margin-top: 0.2rem;
     display: inline-block;
 }
 .learn-more-container p{
+    
     text-align: center;
     padding-bottom:10px ;
     color:white;
 }
-.background-color{
+.our-latest-work-background{
+    padding-top: 2rem;
     width: 100%;
-    height:30%
+    height:400px;
     background-color: #0BE757;
+}
+.our-lates-work h2 {
+   
+    text-align: center;
 }
