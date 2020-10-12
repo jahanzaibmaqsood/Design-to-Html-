@@ -179,8 +179,7 @@ margin-top: 0.2rem;
     text-align: center;
 }
 .learn-more-box{
-    background-color: #E8E8E8;
-    padding: 15px 20px;
+    padding: 10px 15px;
     width: 110px;
     background-color:#0BE757 ;
     border-radius: 50px;
@@ -192,23 +191,31 @@ margin-top: 0.2rem;
     color:white;
 }
 .our-latest-work-background{
-    padding: 3rem;
-    min-height: 400px;
+    padding: 1.5rem;
     background-color: #0BE757;
-    margin-top: 3rem;
+    margin-top: 2.4rem;
     text-align: center;
 }
-.our-latest-work-background h2{
+.our-latest-work-background h1{
     font-size: 1.75rem;
+    color:#0CB547 ;
+   
+}
+
+.our-latest-work-background p {
+    color:##0CC54C;
 }
 
 .tab-active{
     background-color: black;
-    color: white;
+    
 }
 
 .our-latest-work-background .button-group{
     display: inline-table;
+    color:#0BE757;
+    padding-top: 40px;
+    width: 500px;
 }
 
 .our-latest-work-background .button-group .button{
@@ -217,7 +224,7 @@ margin-top: 0.2rem;
     background-color: #97f5b8;
     margin: 0px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .our-latest-work-background .button-group .button:hover{
     background-color: #808080;
@@ -228,16 +235,27 @@ margin-top: 0.2rem;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     border-right: 1px solid #0BE757;
+    background-color: #04CE4A;
+    
 }
+.our-latest-work-background .button-group .button:nth-of-type(2){
+    background-color: white;
+    color:#04CE4A;
+}
+
+
 
 .our-latest-work-background .button-group .button:nth-of-type(3){
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     border-left: 1px solid #0BE757;
+    background-color: white;
+    color:#04CE4A;
 }
 
 .our-latest-work-background .images-grid{
     margin-top: 2rem;
+    padding-top: 40px;
 }
 
 .our-latest-work-background .images-grid img{
@@ -246,10 +264,28 @@ margin-top: 0.2rem;
     margin: 5px 5px;
 }
 
-.button-group-2{
-    margin-top: 2rem;
-}
+
 
 .our-latest-work-background .button-group-2 .button:nth-of-type(1), .our-latest-work-background .button-group-2 .button:nth-of-type(3){
     display: none !important;
+}
+
+.button-group-view-more-images{
+    margin-top: 2.5rem;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #04CE4A;
+    text-decoration: none;
+    border-radius: 200px;
+    width:170px;
+    color:white;
+    
+
+    }
+.testimonials p{
+    margin-top: 2rem;
+    text-align: center;
+    font-size:23px;
+    letter-spacing: 3px;
+    color:#9A9C9B;
 }
