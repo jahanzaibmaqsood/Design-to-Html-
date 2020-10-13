@@ -301,5 +301,26 @@ margin-top: 0.2rem;
 
     
 }
+.navigation-images-outer{
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+}
+
+.navigation-and-text-box{
+    padding: 10px 15px;
+    width: 450px;
+    background-color:#0BE757 ;
+    height: 200px;
+    display: inline-block;
 
 
+} 
+.navigation-images-outer .navigation-and-text-box img {
+    padding-left: 200px;
+    padding-top: 100px;
+}
+.navigation-and-text-box p{
+    text-align: center;
+
+}
