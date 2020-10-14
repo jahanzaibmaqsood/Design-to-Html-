@@ -111,7 +111,7 @@ header{
 .what_we_do p{
     text-align:center;
     color:#808080;
-    font-weight:200:
+    font-weight:200;
     font-size: 16px;
 }
 
@@ -135,7 +135,7 @@ header{
 }
 .box-container img{
     padding-top:17px;
-    width:50:
+    width:50;
     height:50;
 }
 
@@ -157,7 +157,7 @@ header{
 .text-box h{
     padding-top:10%;
     font-weight: 1000;
-    font-size:100px
+    font-size:100px;
     text-align: center;
     color:#808080;
 
@@ -203,7 +203,7 @@ margin-top: 0.2rem;
 }
 
 .our-latest-work-background p {
-    color:##0CC54C;
+    color: #0CC54C;
 }
 
 .tab-active{
@@ -297,41 +297,27 @@ margin-top: 0.2rem;
 }
 .testimonials .navigation-text-margin p{
     text-align: center;
+    color:black;   
+}
+
+.work-item {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+.work-item .image-container,
+.work-item .text-container {
+    display: inline-block;
+    vertical-align: middle; /* add me */
+}
+.work-item .image-container {
+    width: 23%;
+    text-align: center;
+}
+.work-item .text-container {
+    width: 50%
+}
+.work-item .text-container p {
+    margin: 0;
     color:black;
-
-    
-}
-
-.navi-container{
-    width:100%;
-    
-}
-.navi-conta .left-navi-box{
-    display: inline-block;
-    width:33.33%;
-    background-color: wheat;
-    text-align: center;
-
-}
-.left-navi-box-img{
-    padding: 10px 15px;
-    width: 200px;
-    height: 200px;
-    background-color:#0BE757 ;
-    display: inline-block;
-    margin-left:230px;
-}
-.nevi-container img{
-    padding-left: 130px;
-    padding-top:80px;
-}
-.paragraph-box{
-    display: inline-block;
-    width:33.33%;
-    background-color: wheat;
-    text-align: center;
-    height:200px
-
-}
-.
 }
