@@ -154,10 +154,9 @@ header{
     width: 300px;
     display: inline-block;
 }
-.text-box h{
+.text-box h {
     padding-top:10%;
-    font-weight: 1000;
-    font-size:100px;
+    font-size:30pt;
     text-align: center;
     color:#808080;
 
@@ -169,7 +168,7 @@ color:#808080;
 }
 .learn-more-container{
 width:100%;
-margin-top: 0.2rem;
+margin-top: 1.5rem;
 
 }
 .learn-more-outer-box{
@@ -180,11 +179,12 @@ margin-top: 0.2rem;
 }
 .learn-more-box{
     padding: 10px 15px;
-    width: 110px;
+    width: 33.3%;
     background-color:#0BE757 ;
     border-radius: 50px;
     display: inline-block;
 }
+
 .learn-more-box p{
     margin: 0px;
     text-align: center;
@@ -279,15 +279,25 @@ margin-top: 0.2rem;
     border-radius: 200px;
     width:170px;
     color:white;
-    
+}
 
-    }
-.testimonials h1{
-    margin-top: 2rem;
+.testimonials {
     text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.testimonials h1{
+    text-align: center; 
     letter-spacing: 3px;
     color:#9A9C9B;
 }
+
+.greycolor{
+    background-color: lightgrey;
+    padding: 0.5rem;
+}
+
 .testimonials p{
  text-align: center;
  color:#9A9C9B;
@@ -311,7 +321,7 @@ margin-top: 0.2rem;
     vertical-align: middle; /* add me */
 }
 .work-item .image-container {
-    width: 23%;
+    width: 20%;
     text-align: center;
 }
 .work-item .text-container {
