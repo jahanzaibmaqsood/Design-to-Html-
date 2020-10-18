@@ -351,7 +351,7 @@ header {
     border-radius: 40px;
     width: 20%;
     display: inline-block;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .clients .box { 
@@ -371,3 +371,45 @@ header {
     margin: auto;
   
 }
+
+.background{
+    padding: 2rem;
+    background-color: #0BE757;
+    text-align: center;
+    height: 400px;
+
+}
+.background h3{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-align: center;
+    color:#067F1B;
+    
+}
+.background p{
+    color:#039D1E;
+}
+.images-margin-top{
+    width: 60%;
+    margin: auto;
+    margin-top: auto;
+    display: inline-block;
+}
+.background .images-circles{
+    width:110px;
+    height:110px;
+    background-color: linen;
+    display: inline-block;
+    margin: 25px;
+    border-radius: 60px;
+
+}
+
+.character-link{
+    padding-top: 300px;
+    width: 60%;
+    margin: auto;
+    margin-top: auto;
+    display: inline-block;
+}
+
