@@ -376,7 +376,7 @@ header {
     padding: 2rem;
     background-color: #0BE757;
     text-align: center;
-    height: 400px;
+    height: 600px;
 
 }
 .background h3{
@@ -411,5 +411,25 @@ header {
     margin: auto;
     margin-top: auto;
     display: inline-block;
+}
+.charachters-links{
+    padding-top: 50px;
+    width:100%;
+    margin:auto;
+    display: inline-block;
+
+}
+.links{
+    width:7%;
+    height:20px;
+    margin:48px;
+    background-color: linen;
+    display: inline-block;
+    border-radius: 20px;
+    
+    
+    
+    
+
 }
 
