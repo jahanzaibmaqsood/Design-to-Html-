@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+img{
+    max-width: 100% !important;
+}
+
 html, body {
     margin: 0px;
     padding: 0px;
@@ -395,41 +400,39 @@ header {
     margin-top: auto;
     display: inline-block;
 }
+
+.background{
+    position: relative;
+}
+
 .background .images-circles{
-    width:110px;
-    height:110px;
-    background-color: linen;
+    width: 110px;
+    height: 110px;
     display: inline-block;
-    margin: 25px;
-    border-radius: 60px;
-
+    margin: 20px 30px;
+    border-radius: 50px;
 }
 
-.character-link{
-    padding-top: 300px;
-    width: 60%;
-    margin: auto;
-    margin-top: auto;
-    display: inline-block;
-}
-.charachters-links{
-    padding-top: 50px;
-    width:100%;
-    margin:auto;
-    display: inline-block;
-
-}
-.links{
-    width:7%;
-    height:20px;
-    margin:48px;
-    background-color: linen;
-    display: inline-block;
-    border-radius: 20px;
-    
-    
-    
-    
-
+.background .images-circles::after{
+    content: '';
+    border: 1px solid gray;
+    height: 150px;
+    position: absolute;
+    top: 260px;
 }
 
+.images-margin-top .images-circles p{
+    margin-top: 200px;
+    color: white;
+}
+
+.images-margin-top .images-circles .button{
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.images-margin-top .images-circles .button img{
+    display: inline-block;
+    margin: 0px 5px;
+}
