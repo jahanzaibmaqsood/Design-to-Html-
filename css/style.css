@@ -40,6 +40,41 @@ body {
           Generic CSS
 */
 
+/* Typography */
+
+
+.--fs-15{
+  font-size: 1rem;
+}
+
+.--fs-20{
+  font-size: 1.33rem;
+}
+
+.--fs-24{
+  font-size: 1.6rem;
+}
+
+.--fs-55{
+  font-size: 3.66rem;
+}
+
+.--fw-l{
+  font-weight: 300;
+}
+
+.--fw-r{
+  font-weight: 400;
+}
+
+.--fw-m{
+  font-weight: 500;
+}
+
+.--fw-b{
+  font-weight: 700;
+}
+
 /* Color Classes */
 
 .--c-text-color-dark{
@@ -93,6 +128,8 @@ body {
 .--bg-darker-gray{
   background-color: var(--darker-gray);
 }
+
+
 
 
 /* Typography */
@@ -205,11 +242,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.hero .main-heading h1{
-  font-size: 55px;
-  font-weight: 700;
 }
 
 .hero .scroll-down{
