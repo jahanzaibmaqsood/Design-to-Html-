@@ -35,7 +35,7 @@ body {
   background: url(../images/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 120vh;
 }
 
 .main__navigation {
@@ -135,12 +135,22 @@ body {
 }
 .paragraph {
 width:200px;
-height:200px;
-margin-top: 200px;
+height:auto;
+margin-top: 250px;
 margin-left: 37%;
 
 }
 .paragraph p{
   text-align: justify;
   font-size:small;
+  font-weight: lighter;
+}
+.coll{
+  color: #000000;
+  text-decoration: none;
+  margin-top: 40px;
+}
+.see-all{
+  margin-left: 52%;
+  
 }
