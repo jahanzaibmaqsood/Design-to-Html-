@@ -12,9 +12,8 @@ body{
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-
-
 }
+
 body{
     font-size:16px;
     background: url(../images/hero.png);
@@ -25,3 +24,10 @@ body{
     position: relative;
 }
 
+nav.navbar{
+  justify-content: space-between !important;
+}
+
+.navbar-collapse{
+  flex-grow: 0;
+}
