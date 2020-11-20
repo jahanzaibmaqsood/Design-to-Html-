@@ -1,19 +1,3 @@
-/* Main color variables */
-@font-face {
-  font-family: garamond-r;
-  src: url(../font/AGaramondPro-Regular.otf);
-}
-
-@font-face {
-  font-family: garamond-sb;
-  src: url(../font/AGaramondPro-Semibold.otf);
-}
-
-@font-face {
-  font-family: garamond-b;
-  src: url(../font/AGaramondPro-Bold.otf);
-}
-
 /* Main CSS */
 *:focus,
 *:hover {
@@ -22,200 +6,22 @@
 }
 
 html,
-body {
-  -webkit-box-sizing: border-box;
+body{
+     -webkit-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-}
 
-body {
-  font-size: 16px;
-  font-family: garamond-r;
-  background: url(../images/hero.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  position: relative;
-}
 
-.main__navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 1.5rem 150px;
 }
-
-.main__navigation__left {
-  position: relative;
-  width: 200px;
-}
-
-.main__navigation__left a {
-  font-size: 14px;
-  color: #000000;
-}
-
-.main__navigation__left .line::before {
-  content: "";
-  border: 1px solid #000000;
-  position: absolute;
-  width: 90px;
-  left: -100px;
-  bottom: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.main__navigation__middle {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.main__navigation__dot-upper {
-  position: absolute;
-  content: "";
-  border: 1px solid #000000;
-  width: 1px;
-  height: 1px;
-  top: -10px;
-  background-color: #000000;
-}
-
-.main__navigation__dot-lower {
-  position: absolute;
-  content: "";
-  border: 1px solid #000000;
-  width: 1px;
-  height: 1px;
-  bottom: -10px;
-  background-color: #000000;
-}
-
-.main__navigation__right {
-  position: relative;
-  width: 200px;
-  text-align: right;
-}
-
-.main__navigation__right a {
-  font-size: 14px;
-  color: #000000;
-}
-
-.main__navigation__right .line::before {
-  content: "";
-  border: 1px solid #000000;
-  position: absolute;
-  width: 90px;
-  right: -100px;
-  bottom: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.right-line{
-  font-size: 100px;
-  padding: 150px 0px 0px 150px;
-}
-
-.paragraph{
-  width: 215px;
-  margin-left: 35%;
-  margin-top: 100px;
-  position: relative;
-}
-
-.paragraph::before{
-  content: '';
-  border-top: 1px solid #000000;
-  width: 350px;
-  position: absolute;
-  top: -20px;
-}
-
-.see-all{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);bottom: 50px;
-  font-size: 20px;
-  text-decoration: underline;
-}
-
-.see-all a{
-  color: gray !important;
-}
-
-.left-social{
-  position: absolute;
-  top: 70%;
-  transform: rotate(-90deg);
-}
-
-.left-social a{
-  display: inline-block;
-  margin-right: 20px;
-  color: #000000;
-  text-decoration: underline;
-}
-
-.left-social .line{
-  position: absolute;
-  border-top: 1px solid #000000;
-  width: 200px;
-  top: -12px;
-  right: -200px;
-}
-
-.right-numbers{
-  position: absolute;
-  text-align: right;
-  top: 30%;
-  right: 50px;
-}
-
-.right-numbers li:nth-of-type(1){
-  font-size: 48px;
-  margin-bottom: 220px;
-}
-
-.right-numbers .line::after{
-  position: absolute;
-  content: '';
-  border-right: 1px solid #000000;
-  height: 160px;
-  top: 90px;
-  right: 12px;
-}
-
-.bottom-left-line{
-  display: flex;
-  margin-left: 50px;
-  position: relative;
-}
-
-.bottom-left-line p:nth-of-type(2){
-  margin-left: 220px;
-}
-
-.bottom-left-line .line::before{
-  content:'';
-  border-bottom: 1px solid #000000;
-  width: 180px;
-  position: absolute;
-  bottom: 27px;
-  left: 95px;
+body{
+    font-size:16px;
+    background: url(../images/hero.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
 }
 
