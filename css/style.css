@@ -48,7 +48,7 @@ nav.navbar{
 
 .nav-link.btn{
   border-radius: 50px;
-  width: 100px;
+  width: 120px;
   height: 44px;
   color: white !important;
 }
@@ -62,7 +62,7 @@ nav.navbar{
 }
 
 .heading{
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
 }
   
@@ -80,7 +80,7 @@ nav.navbar{
 
 .play-button{
   width: 150px; 
-  height:40px;
+  height:30px;
   border-radius: 50px;
   background-color: #eef0f2;
   text-align: center;
