@@ -24,7 +24,9 @@ body{
     position: relative;
 }
 
-
+p-5 {
+  padding: 1rem;
+}
 
 nav.navbar{
   justify-content: space-between !important;
@@ -42,4 +44,40 @@ nav.navbar{
   width: 30px;
   height: 30px;
   background-color: turquoise;
+}
+.heading{
+  font-size: 16px;
+  text-align: center;
+
+}
+  
+.heading p{
+  text-align: center;
+  padding-top: 20px;
+  color: 9fa1a3;
+
+
+
+}
+.play-button{
+  width: 150px; 
+  height:40px ;
+  border-radius: 20px;
+  background-color: eef0f2;
+  text-align: center;
+  border-style: solid;
+  border-color: d9dcde;
+  margin-left: 43%;
+
+
+}
+.play-button a{
+  text-align: center;
+  padding-top: 20px;
+  margin
+}
+ {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
 }
