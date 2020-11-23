@@ -35,49 +35,60 @@ nav.navbar{
 
 .navbar-collapse{
   flex-grow: 0;
+  width: 300px;
 }
-.navbar-expand-lg .navbar-nav .nav-link{
-  padding-right: .5rem;
-  padding-left: 1.5rem;
-} 
-.collapse .navbar-collapse li:nth-of-type(Disabled){
-  width: 30px;
-  height: 30px;
-  background-color: turquoise;
+
+.navbar-collapse:nth-of-type(2){
+  justify-content: flex-end;
 }
+
+.nav-link{
+  margin: 0px 10px;
+}
+
+.nav-link.btn{
+  border-radius: 50px;
+  width: 100px;
+  height: 44px;
+  color: white !important;
+}
+
+.nav-link.btn img{
+  vertical-align: initial;
+}
+
+.navbar-brand{
+  margin: 0px;
+}
+
 .heading{
   font-size: 16px;
   text-align: center;
-
 }
   
 .heading p{
   text-align: center;
   padding-top: 20px;
-  color: 9fa1a3;
-
-
-
+  color: #9fa1a3;
 }
+
+.cta-button{
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .play-button{
   width: 150px; 
-  height:40px ;
-  border-radius: 20px;
-  background-color: eef0f2;
+  height:40px;
+  border-radius: 50px;
+  background-color: #eef0f2;
   text-align: center;
   border-style: solid;
-  border-color: d9dcde;
-  margin-left: 43%;
-
-
+  border-color: #d9dcde;
 }
-.play-button a{
-  text-align: center;
-  padding-top: 20px;
-  margin
-}
- {
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
+
+.play-button:hover{
+  background-color: #9fa1a3;
+  color: #ffffff;
 }
