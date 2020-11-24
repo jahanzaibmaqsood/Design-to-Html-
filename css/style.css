@@ -26,3 +26,23 @@
     font-size: 2rem;
     letter-spacing: -1px;
 }
+.main-branding .container .dropdown img{
+    width: 20px;
+    height: 20px;
+}
+.nav-bar-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    height:100px;
+    background-color: turquoise;
+
+}
+.nav-bar-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 35%;
+}
+}
