@@ -1,94 +1,42 @@
-/* Main CSS */
-*:focus,
-*:hover {
-  outline: none !important;
-  border: none !important;
-}
+.uper-bar{
+    width: 90%;
+    height: 30px;
+    background-color: #d9e1e6;
+    margin-top: 40px;
+    margin-left: 5%;
+    text-align: center;
 
-html,
-body{
-     -webkit-box-sizing: border-box;
-     -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
 }
+.nav-container{
+    width: 100%;
+    height:60px;
+    background-color: turquoise;
+}
+.uper-bar p{
+    letter-spacing: 0cm;
+    color: #868f93;
+    padding-top: 3.5px;
 
-body{
-    font-size:16px;
-    background: url(../images/hero.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    position: relative;
 }
+.nav-bar-dropdown{
+    margin-top: 40px;
+    margin-left:20%;
+}
+.dnav-bar-dropdown .img{
+    width: 20px;
+    height: 20px;
+}
+.nav-bar-dropdown .bonfire{
+    
+    padding-left:20%;
+    display:inline-block;
+    
+}
+.nav-bar-dropdown .bonfire p{
+    font-size: 32px;
+    font-weight: bold;
+}
+.nav-container  a{
+    float:right;
 
-p-5 {
-  padding: 1rem;
-}
-
-nav.navbar{
-  justify-content: space-between !important;
-  font-weight: 500;
-}
-
-.navbar-collapse{
-  flex-grow: 0;
-  width: 300px;
-}
-
-.navbar-collapse:nth-of-type(2){
-  justify-content: flex-end;
-}
-
-.nav-link{
-  margin: 0px 10px;
-}
-
-.nav-link.btn{
-  border-radius: 50px;
-  width: 120px;
-  height: 44px;
-  color: white !important;
-}
-
-.nav-link.btn img{
-  vertical-align: initial;
-}
-
-.navbar-brand{
-  margin: 0px;
-}
-
-.heading{
-  font-size: 12px;
-  text-align: center;
-}
-  
-.heading p{
-  text-align: center;
-  padding-top: 20px;
-  color: #9fa1a3;
-}
-
-.cta-button{
-  display: block;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.play-button{
-  width: 150px; 
-  height:40px;
-  border-radius: 50px;
-  background-color: #eef0f2;
-  text-align: center;
-  border-style: solid;
-  border-color: #d9dcde;
-}
-
-.play-button:hover{
-  background-color: #9fa1a3;
-  color: #ffffff;
 }
