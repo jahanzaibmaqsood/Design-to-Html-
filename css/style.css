@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     height:100px;
-    background-color: turquoise;
+    
 
 }
 .nav-bar-inner{
@@ -43,6 +43,15 @@
     justify-content: space-between;
     align-items: center;
     justify-content: space-between;
-    margin-left: 35%;
+    margin-left: 27%;
 }
+.navbar-nav > li{
+padding-left: 35px;
 }
+.bg-light{
+    background-color:white;
+
+}
+
+
+
