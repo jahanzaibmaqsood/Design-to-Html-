@@ -2,59 +2,58 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<script src="js/fontawesome.js"></script>
+   <script src="js/fontawesome.js"></script>
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
 
-	<link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-    <header>
 
-       <div class="uper-bar">
-        <p>START SELLING YOUR PRODUCTOR BUY THEM FROM ANY WHERE </p>
-        </div>
+   <div class="alert alert-dark alert-dismissible text-center fade show" role="alert">
+      <div class="container">
+         START SELLING YOUR PRODUCTOR BUY THEM FROM ANY WHERE
+         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span>&times;</span>
+         </button>
+      </div>
+   </div>
 
-      <div class="nav-container">
 
-           <div class="nav-bar-dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-               <img src="Images/flag.png" alt="123";> USD
-                <span class="caret"></span>
-              </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-
-               <div class="bonfire">
-                  <p>BONFIRE</p>
-                
+   <div class="main-branding">
+      <div class="container">
+         <div class="main-branding-inner">
+            <div class="dropdown">
+               <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  USD
+               </button>
+               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
                </div>
-
-               <div class="cta-button">
-                  <a href="javascript:void(0);" class="btn play-button">
-                   CART (3)
-                    </a>
-                </div>
             </div>
-    </div>   
+            <div class="brand">
+               BONFIRE
+            </div>
+            <div class="btn btn-outline-secondary">
+               CART (<span id="cartItems">3</span>)
+            </div>
+         </div>
+      </div>
+   </div>
 
-          
-      
 
-            
-    
-    </header>
-
+   <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.js"></script>
+   <script src="js/popper.js"></script>
+   <script src="js/custom.js"></script>
 
 </body>
