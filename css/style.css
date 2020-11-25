@@ -35,18 +35,6 @@
     display: flex;
     align-items: center;
     height:100px;
-    
-
-}
-.nav-bar-inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 27%;
-}
-.navbar-nav > li{
-padding-left: 35px;
 }
 .bg-light{
     background-color:white;
