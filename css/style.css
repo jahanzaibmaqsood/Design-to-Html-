@@ -61,7 +61,7 @@
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -75,7 +75,7 @@
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: -33px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -122,4 +122,24 @@
 .active,
 .demo:hover {
   opacity: 1;
+}
+.row {
+    display: inline-flex;
+    padding: 10px;
+    width:120%;
+    
+}
+.container .mySlides img {
+    height: 600px;
+}
+.container .row .column img {
+    
+    width:100px ;
+    height: 100px;
+}
+.slider {
+
+}
+.col-lg-6{
+    width: 100%;
 }
