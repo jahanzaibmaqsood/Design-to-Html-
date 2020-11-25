@@ -75,7 +75,7 @@
 
 /* Position the "next button" to the right */
 .next {
-  right: -33px;
+  right: 58px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -140,6 +140,6 @@
 .slider {
 
 }
-.col-lg-6{
-    width: 100%;
+.container .row .col-lg-6{
+    width: 50%;
 }
