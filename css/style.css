@@ -40,6 +40,41 @@
     background-color:white;
 
 }
+.product-view{
+    width:640px;
+    height: 683px;
+    background-color: #e1e1e1;
+    margin-top: 40px;
+    margin-left: 13.5%;
+    display: inline-block;
+}
 
+.product-detail-container{
+    width:400px;
+    height: 683px;
+     margin-top: 40px;
+     position: absolute;
+    display: inline-block;
+    margin-left: 20px;
+    background-color: blanchedalmond;
+
+}
+.product-detail-container a{
+    display: inline;
+    position: absolute;
+    color: black;
+    letter-spacing: -1px;
+}
+.branding-name{
+    padding-top: 50px;
+    display: inline-block;
+    postition: absolute
+
+}
+.product-detail-container .branding-name p{
+    font-size:18px ;
+    font-weight:600;
+
+}
 
 
