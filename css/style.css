@@ -127,3 +127,51 @@
 .demo:hover {
   opacity: 1;
 }
+.container .col-lg-6 p{
+  font-size: 18px;
+  font-weight:  500;
+  margin-top: 20px;
+
+}
+.container .col-lg-6 .checked{
+  color:green;
+
+}
+
+.container .col-lg-6 .price p{
+  margin-top:10px;
+  font-size: 18px;
+  font-weight:  500;
+  color:#1877F2;
+  margin-top: 10px;
+
+}
+.container .col-lg-6 .avilable{
+  padding:0;
+
+  
+  
+}
+.container .col-lg-6 .avilable p{
+  font-size:14px;
+  font-weight: 500;
+
+}
+.container .col-lg-6 .item-discription p{
+  font-size:14px;
+  font-weight:400;
+}
+
+.container .col-lg-6 .list ul li::before {
+  
+  color:#e1e1e1;
+  font-weight: bold;
+  display: inline-block; 
+  
+  
+}
+.container .col-lg-6 .list ul{
+  margin-left:0rem;
+  font-size:14px;
+  font-weight:400;
+}
