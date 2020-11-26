@@ -170,8 +170,21 @@
   
   
 }
+
 .container .col-lg-6 .list ul{
   margin-left:0rem;
   font-size:14px;
   font-weight:400;
+}
+.container .col-lg-6 .button-container {
+  display: inline-block;
+  position:absolute;
+}
+.container .col-lg-6 .button-container .container .btn-primary{
+  background-color:white;
+  color: #838383;
+  border-color:#838383 ;
+  display: inline-block;
+
+  
 }
