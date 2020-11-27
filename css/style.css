@@ -127,6 +127,9 @@
 .demo:hover {
   opacity: 1;
 }
+.container .col-lg-6{
+  height: 600px;
+}
 .container .col-lg-6 p{
   font-size: 18px;
   font-weight:  500;
@@ -170,14 +173,16 @@
   
   
 }
-
+.container .col-lg-6 .button-container .container{
+  display: inline-block;
+}
 .container .col-lg-6 .list ul{
   margin-left:0rem;
   font-size:14px;
   font-weight:400;
 }
-.container .col-lg-6 .button-container {
-  display: inline-block;
+.container .col-lg-6 .button-container{
+  display: flex;
   position:absolute;
 }
 .container .col-lg-6 .button-container .container .btn-primary{
