@@ -21,18 +21,34 @@ body {
     justify-content: center;
     margin-top: 200px;
 }
-.navbar{
-    font-family:BAZA;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    font-size: 24px;
-    
-    
 
+.nav-item{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
 }
-.navbar img{
-    width: 100px;
-    height: 100px;
-    margin-top: 0%;
+
+.nav-link{
+    font-family: BAZAR;
+    text-transform: uppercase;
+    font-size: 2rem;
+    display: block;
+    margin-top: -2rem;
+    color: white !important;
+}
+
+.nav-link img{
+    width: 150px;
+    margin-top: 2rem !important;
+}
+
+.centeralized-image{
+    display: block;
+}
+
+.centeralized-image img{
+    display: inherit;
+    margin: 0 auto;
+    width: 500px;
 }
