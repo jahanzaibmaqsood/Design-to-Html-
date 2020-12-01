@@ -8,18 +8,18 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 150vh;
     position: relative;
   }
 .image-slider-container{
     background-color: white;
-    height: 450px;
+    height: 460px;
     width: 70%;
     position: relative;
     margin: auto;
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 60px;
 }
 
 .nav-item{
@@ -51,4 +51,13 @@ body {
     display: inherit;
     margin: 0 auto;
     width: 500px;
+}
+.image-slider-container .image-container{
+    background-color: wheat;
+    height: 400px;
+    width:98%;
+    margin-top: 10px;
+}
+.image-slider-container .image-container .codak-camera P{
+    align-content: center;
 }
