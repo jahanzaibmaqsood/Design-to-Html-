@@ -1,5 +1,9 @@
+@font-face {
+    font-family: "BAZAR";
+    src: url("../fonts/Bazar.ttf");
+
+}
 body {
-    font-size: 16px;
     background: url(../images/background.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -15,5 +19,20 @@ body {
     margin: auto;
     display: flex;
     justify-content: center;
-    margin-top: 500px;
+    margin-top: 200px;
+}
+.navbar{
+    font-family:BAZA;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 24px;
+    
+    
+
+}
+.navbar img{
+    width: 100px;
+    height: 100px;
+    margin-top: 0%;
 }
