@@ -1,53 +1,63 @@
-.background{
-
-    background: url(../images/hero-background.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 140vh;
-    position: relative;
-}
-@font-face{
-    font-family: 'Raleway', sans-serif;
-    src : url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-}
-.hero-page{
-    font-family: "Raleway" ;
-    font-size:16px;
-    
-}
-.background h1{
-    color: white;
-    padding-top: 30%;
-    ;
-    
-    
-} .background{
-    
-    padding-left:120px;
-    position: relative;
-    
-    
-}
-.background .text{
-    display:inline-block
-}
-.background img{
-    position: absolute;
-    width: 50%;
-    height: 350px;
-    bottom: 0;
-    left:750px;
-  
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap");
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-.background p{
-    color: #e1e1e1;
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  position: relative;
 }
-}
-.background .text img {
 
-    position: relative;
-    width: 10px:
-    height:30px;
+.--fw-el {
+  font-weight: 200;
+}
+.--fw-l {
+  font-weight: 300;
+}
+.--fw-r {
+  font-weight: 400;
+}
+.--fw-m {
+  font-weight: 500;
+}
+.--fw-b {
+  font-weight: 600;
+}
+.--ls-0 {
+  letter-spacing: -2px;
+}
+
+.--c-primary {
+  color: #f26522;
+}
+
+.--bg-primary {
+  background: #f26522;
+}
+
+.--c-secondary {
+  color: #323339;
+}
+
+.--bg-secondary {
+  background: #323339;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero {
+  background: url(../images/hero-background.png);
+  height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding-top: 70px;
 }
