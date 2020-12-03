@@ -25,11 +25,29 @@
 } .background{
     
     padding-left:120px;
+    position: relative;
+    
+    
+}
+.background .text{
+    display:inline-block
 }
 .background img{
     position: absolute;
+    width: 50%;
+    height: 350px;
     bottom: 0;
-    padding-left: 40.5%;
-    
+    left:750px;
+  
 }
 
+.background p{
+    color: #e1e1e1;
+}
+}
+.background .text img {
+
+    position: relative;
+    width: 10px:
+    height:30px;
+}
