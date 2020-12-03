@@ -50,14 +50,47 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
+  margin-left: 180px;
+
 }
 
 .hero {
   background: url(../images/hero-background.png);
-  height: 100vh;
+  height: 115vh;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   padding-top: 70px;
+}
+.navbar-nav .nav-item .active:nth-of-type(1) {
+
+    border-bottom: 5px solid #white;
+    padding:5px;
+}
+    
+}
+.hero .container img{
+    position:relative;
+    display: inline-block;
+    
+}
+.hero .container{
+    margin-top: 220px;
+}
+.hero .bottom-img {
+    position: relative;
+    padding-left:820px;
+
+}
+.hero .bottom-img img{
+    width:700px;
+    height:300px;
+    bottom:0;
+}
+.hero .orange-background{
+    width:100px;
+    height:600px;
+    position:relative;
+    display:inline-block;
 }
