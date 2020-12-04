@@ -62,6 +62,10 @@ header {
   background-position: center;
   position: relative;
   padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+
+
 }
 .navbar-nav .nav-item .active:nth-of-type(1) {
 
@@ -71,26 +75,40 @@ header {
     
 }
 .hero .container img{
-    position:relative;
-    display: inline-block;
+
+    display: flex;
+    
+  
     
 }
+.hero .container p{
+  display: flex;
+  
+  
+}
 .hero .container{
-    margin-top: 220px;
+  padding-top: 200px;
+  position: relative;
+  
+  
 }
 .hero .bottom-img {
-    position: relative;
+    position: absolute;
     padding-left:820px;
+    display:flex;
+    bottom: 0;
+    justify-content: start;
+    
 
 }
 .hero .bottom-img img{
     width:700px;
     height:300px;
-    bottom:0;
+    position: relative;
 }
 .hero .orange-background{
-    width:100px;
+    width:200px;
     height:600px;
     position:relative;
-    display:inline-block;
+    margin-left: 41%;
 }
