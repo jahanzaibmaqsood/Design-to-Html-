@@ -51,7 +51,6 @@ body {
   width: 100%;
   z-index: 1;
   margin-left: 180px;
-
 }
 
 .hero {
@@ -64,52 +63,46 @@ body {
   padding-top: 70px;
   display: flex;
   flex-direction: column;
-
-
 }
-.main-grid{
+.main-grid {
   display: grid;
   width: 100%;
-  height:120vh;
-  grid-template-columns:13% 37%  30% 18%;
-  grid-template-rows:40vh 40vh 40vh 40vh;
-  grid-template-areas: 
-  '. . . .  '
-  '. mid . . '
-  '.  bottom bottom bottom';
-
+  height: 120vh;
+  grid-template-columns: 13% 37% 30% 18%;
+  grid-template-rows: 40vh 40vh 40vh 40vh;
+  grid-template-areas:
+    ". . . .  "
+    ". mid . . "
+    ".  bottom bottom-orange .";
 }
 
-.top{
+.top {
   grid-area: top;
 }
 
-.mid{
+.mid {
   grid-area: mid;
 }
 
-.bottom{
+.bottom {
   grid-area: bottom;
 }
 
- .main-grid .arrow {
-   flex-direction: row;
-   width: 500px;
-   height: 30px;
+.bottom-oraneg{
+  grid-area: bottom-orange;
+}
 
-  }
-  .main-grid .arrow .line{
-    
-  }
-  
+.main-grid .mid .arrow {
+  flex-direction: row;
+  width: 500px;
+  height: 30px;
+}
 
-  .bottom {
-    padding-top: 50px;
-  }
-  .main .bottom .orange-p{
-    height:20px;
-    width:60px;
-    background-color: khaki;
-    
-
-  }
+.bottom {
+  padding-top: 50px;
+}
+.main-grid .bottom .orange-p {
+  height: 20px;
+  width: 60px;
+  background-color: khaki;
+}
