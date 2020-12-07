@@ -67,48 +67,18 @@ header {
 
 
 }
-.navbar-nav .nav-item .active:nth-of-type(1) {
-
-    border-bottom: 5px solid #white;
-    padding:5px;
-}
-    
-}
-.hero .container img{
-
-    display: flex;
-    
-  
-    
-}
-.hero .container p{
-  display: flex;
-  
-  
-}
-.hero .container{
-  padding-top: 200px;
-  position: relative;
-  
-  
-}
-.hero .bottom-img {
-    position: absolute;
-    padding-left:820px;
-    display:flex;
-    bottom: 0;
-    justify-content: start;
-    
+.container{
+  display: grid;
+  width: 100%;
+  grid-template-columns:50% 50%;
+  grid-template-rows: 300px 400px;
+ 
+  grid-column-gap:20px;
+  position: absolute;
 
 }
-.hero .bottom-img img{
-    width:700px;
-    height:300px;
-    position: relative;
-}
-.hero .orange-background{
-    width:200px;
-    height:600px;
-    position:relative;
-    margin-left: 41%;
+.container .sleek{
+  padding:200px 0 0 0;
+  text-align: center;
+
 }
