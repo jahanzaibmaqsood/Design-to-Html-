@@ -67,18 +67,26 @@ header {
 
 
 }
-.container{
+.main-grid{
   display: grid;
   width: 100%;
-  grid-template-columns:50% 50%;
-  grid-template-rows: 300px 400px;
- 
-  grid-column-gap:20px;
-  position: absolute;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  'top top top'
+  'mid'
+  'bottom bottom bottom';
 
 }
-.container .sleek{
-  padding:200px 0 0 0;
-  text-align: center;
 
+.top{
+  grid-area: top;
+}
+
+.mid{
+  grid-area: mid;
+}
+
+.bottom{
+  grid-area: bottom;
 }
