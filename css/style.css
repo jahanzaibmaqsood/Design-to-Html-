@@ -77,7 +77,7 @@ body {
 
   grid-template-areas: 
   'top top top top'
-  'mid mid mid mid'
+  'mid mid . .'
   'bot bot-or bot-img bot-img'
   '. bot-or finally finally'
   ;
@@ -107,18 +107,3 @@ body {
 .finally{
   grid-area: finally;
 }
-
-/* .main-grid .mid .arrow {
-  flex-direction: row;
-  width: 500px;
-  height: 30px;
-}
-
-.bottom {
-  padding-top: 50px;
-}
-.main-grid .bottom .orange-p {
-  height: 20px;
-  width: 60px;
-  background-color: khaki;
-} */
