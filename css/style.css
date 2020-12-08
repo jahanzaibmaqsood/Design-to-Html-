@@ -78,8 +78,8 @@ body {
   grid-template-areas: 
   'top top top top'
   'mid mid . .'
-  'bot bot-or bot-img bot-img'
-  '. bot-or finally finally'
+  '. . . .'
+  'bot-links bot-or bot-img bot-img'
   ;
 
 }
@@ -102,6 +102,7 @@ body {
 
 .bot-img{
   grid-area: bot-img;
+
 }
 
 .finally{
