@@ -66,12 +66,12 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 180px;
-  margin-bottom: 400px;
+  margin-bottom: 480px;
 }
 .main-grid {
   display: grid;
   width: 100%;
-  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-template-columns:  1fr 1fr  1fr 1fr;
   grid-template-rows: 300px 400px 500px 400px;
 
   grid-template-areas: 
@@ -105,4 +105,34 @@ body {
 
 .finally{
   grid-area: finally;
+}
+.second-grid{
+  display:grid;
+  width: 100%;
+  height:600px;
+  grid-template-columns:12% 45% 50px 41%;
+  grid-template-rows:100px 400px 100px;
+  grid-template-areas:
+  '. pheading . .'
+  '. parapgraph1 . parapgraph2'
+  '. parapgraph3 . parapgraph4'
+  ;
+}
+
+.pheading{
+  grid-area: pheading;
+
+
+}
+.parapgraph1{
+  grid-area: parapgraph1;
+}
+.parapgraph2{
+  grid-area: parapgraph2;
+}
+.parapgraph3{
+  grid-area:parapgraph3 ;
+}
+.parapgraph4{
+  grid-area: parapgraph4;
 }
