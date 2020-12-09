@@ -102,10 +102,6 @@ body {
   grid-area: bot-img;
 }
 
-.bot-img img{
-  height: 100%;
-}
-
 .finally{
   grid-area: finally;
 }
