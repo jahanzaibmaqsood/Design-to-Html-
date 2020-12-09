@@ -58,12 +58,11 @@ body {
 
 .hero {
   background: url(../images/hero-background.png);
-  height: 115vh;
+  height: 1200px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  padding-top: 70px;
   display: flex;
   flex-direction: column;
   padding-left: 180px;
@@ -71,15 +70,14 @@ body {
 .main-grid {
   display: grid;
   width: 100%;
-  height: 120vh;
   grid-template-columns:  1fr 1fr 1fr 1fr;
-  grid-template-rows: 25vh 25vh 25vh 25vh;
+  grid-template-rows: 300px 400px 500px auto;
 
   grid-template-areas: 
   'top top top top'
   'mid mid . .'
-  '. . . .'
   'bot-links bot-or bot-img bot-img'
+  '. bot-or finally finally'
   ;
 
 }
@@ -93,7 +91,7 @@ body {
 }
 
 .bot-links{
-  grid-area: bot;
+  grid-area: bot-links;
 }
 
 .bot-or{
@@ -102,7 +100,10 @@ body {
 
 .bot-img{
   grid-area: bot-img;
+}
 
+.bot-img img{
+  height: 100%;
 }
 
 .finally{
