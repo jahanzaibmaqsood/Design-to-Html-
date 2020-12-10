@@ -201,3 +201,33 @@ body {
   border-color: white;
   color: white;
 }
+ .pattern-bg{
+background: url(../images/pattern-background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height:700px;
+  
+}
+.fifth-grid{
+  display: grid;
+  grid-template-columns:25% 60% auto;
+  grid-template-rows:500px auto auto;
+  grid-template-areas:
+  '. . .'
+  'third-org mountain-img .'
+  'third-org footer-anyway .'
+}
+.third-org{
+  grid-area:third-org;
+}
+.mountain-img{
+  grid-area:mountain-img;
+    
+}
+.footer-anyway{
+grid-area:footer-anyway;
+}
