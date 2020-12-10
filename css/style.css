@@ -153,8 +153,8 @@ body {
 }
 .thrd-grid{
   display: grid;
-  grid-template-columns: 600px 600px auto;
-  grid-template-rows: 300px 600px;
+  grid-template-columns: 400px 400px auto;
+  grid-template-rows: 300px 500px;
   grid-template-areas:
   '. . .'
   'orng-background image .'
