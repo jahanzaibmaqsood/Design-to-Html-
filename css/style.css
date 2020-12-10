@@ -136,3 +136,64 @@ body {
 .parapgraph4{
   grid-area: parapgraph4;
 }
+.background-mid{
+  background: url(../images/mid-background.png);
+  height: 700px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+.background-mid .thrd-grid{
+  display: grid;
+  grid-template-columns: 12% 28% 28% 32%;
+  grid-template-rows:300px 400px;
+  grid-template-areas:
+  '. . . .'
+  '. orng-background image .'
+  ;
+
+
+}
+.orng-background{
+  grid-area:orng-background;
+}
+.image{
+  grid-area:image;
+}
+.orange-background{
+  width:100%;
+  height:900px;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  
+}
+.orange-background .fourth-grid{
+  display:grid;
+  margin-left:12%;
+  grid-template-columns:50% 60px 35%;
+  grid-template-rows:80px 400px ;
+  grid-template-areas:
+  '. . .'
+  'paragraph1 . paragraph2'
+
+}
+.paragraph1{
+  grid-area:paragraph1;
+}
+.paragraph2{
+  grid-area:paragraph2;
+}
+.take-action{
+  width:88%%;
+  background-color:#323339;
+  margin-left:12%;
+  height:200px;
+  position:relative;
+
+}
+
