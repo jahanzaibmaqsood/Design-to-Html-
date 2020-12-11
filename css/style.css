@@ -211,14 +211,11 @@ body {
 }
  .pattern-bg{
 background: url(../images/pattern-background.png);
-  background-size: 100% 100%;
+  background-size: 100% 1000px;
   background-repeat: no-repeat;
-  background-position: center;
   position: relative;
   display: flex;
   flex-direction: column;
-  height:700px;
-  
 }
 .fifth-grid{
   display: grid;
