@@ -211,7 +211,7 @@ body {
 }
  .pattern-bg{
 background: url(../images/pattern-background.png);
-  background-size: 100% 1000px;
+  background-size: 100% 720px;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
@@ -238,5 +238,35 @@ grid-area:footer-anyway;
 }
 .footer-links{
   width: 100%;
-  height: 600px;
+  height: 800px;
 }
+.footer-links .footer-grid
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:100px auto auto ;
+  grid-template-areas: 
+  '. . . . .'
+  'item-list1 item-list2 item-list3 item-list4 item-list5'
+  '. . . . .'
+  ;
+}
+.item-list1{
+grid-area:item-list1;
+}
+.item-list2{
+grid-area:item-list2;
+}
+.item-list3{
+grid-area:item-list3
+}
+.item-list4{
+  grid-area:item-list4
+
+}
+.item-list5{
+grid-area:item-list5;
+}
+.footer-links .--pl-custom-180 .footer-grid{
+  color:white;
+  
