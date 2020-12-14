@@ -24,12 +24,52 @@
 
 .top-search {
   grid-area: top-search;
-  background-color: lightcoral;
+  
+  display:flex;
+    flex-direction: row;
+    padding-left: 48px;
+}
+.top-search .active-cyan-4  {
+   
+border-radius: 10px solid grey;
+    width: 214px;
 }
 .profile {
   grid-area: profile;
-  background-color: lightpink;
+ 
+  display: flex;
+  position:relative;
+  flex-direction: row;
+  padding-top: 13px;
+  
+
+
 }
+.profile img{
+    width:22%;
+    height:35px;
+    padding-left: 36px;
+    position:relative;
+
+    
+
+}
+.profile a{
+
+  color:rgb(129, 129, 129);
+
+}
+.vertical-line{
+  border-left: 3px solid #ebebeb;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: 3px;
+  top: 0;
+
+
+}
+
 .navbar {
   grid-area: navbar;
   background-color: rgb(19, 8, 4);
@@ -84,6 +124,8 @@
 .navigation ul li a i {
   margin-right: 1rem;
 }
+    
+
 
 .hero-video {
   grid-area: hero-video;
