@@ -15,59 +15,11 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 17% 60% 23%;
-  grid-template-rows: 60px 350px auto;
+  grid-template-rows: 60px 400px auto;
   grid-template-areas:
     "navbar top-search profile"
-    "navbar hero-video suggestion-videos"
+    "navbar hero-video notifications"
     "navbar other-videos comments-section";
-}
-
-.top-search {
-  grid-area: top-search;
-  
-  display:flex;
-    flex-direction: row;
-    padding-left: 48px;
-}
-.top-search .active-cyan-4  {
-   
-border-radius: 10px solid grey;
-    width: 214px;
-}
-.profile {
-  grid-area: profile;
- 
-  display: flex;
-  position:relative;
-  flex-direction: row;
-  padding-top: 13px;
-  
-
-
-}
-.profile img{
-    width:22%;
-    height:35px;
-    padding-left: 36px;
-    position:relative;
-
-    
-
-}
-.profile a{
-
-  color:rgb(129, 129, 129);
-
-}
-.vertical-line{
-  border-left: 3px solid #ebebeb;
-  height: 40px;
-  position: absolute;
-  left: 50%;
-  margin-left: 3px;
-  top: 0;
-
-
 }
 
 .navbar {
@@ -124,22 +76,149 @@ border-radius: 10px solid grey;
 .navigation ul li a i {
   margin-right: 1rem;
 }
-    
 
+.top-search {
+  grid-area: top-search;
+
+  display: flex;
+  align-items: center;
+}
+.top-search .form-control {
+  border-radius: 50px;
+  width: 214px;
+}
+
+.profile {
+  grid-area: profile;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+.profile .user {
+  display: flex;
+  align-items: center;
+}
+
+.profile .right {
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.profile .right a {
+  margin-right: 30px;
+}
+
+.profile .left,
+.profile .right {
+  width: calc(50% - 0.5px);
+}
+
+.profile .middle {
+  border: 1px solid gray;
+  height: 60%;
+}
+
+.profile .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+  position: relative;
+  color: gray;
+}
+
+.profile .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border: none;
+  color: #a9e8ed;
+}
+.profile .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active .triangle-up {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 18px solid #a9e8ed;
+}
 
 .hero-video {
   grid-area: hero-video;
   background-color: orangered;
 }
-.suggestion-videos {
-  grid-area: suggestion-videos;
-  background-color: rebeccapurple;
+
+.trending-now-badge {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(232, 74, 74, 0.631);
+  color: white;
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
 }
+
+.notifications {
+  grid-area: notifications;
+  background-color: #e9e9e9;
+}
+
+.notifications .top-reply {
+  background-color: #a9e8ed;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.notifications .info {
+  height: calc(100% - 60px);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.notifications .info .info-inner {
+  width: 100%;
+}
+
+.notifications .info .info-inner .top-title {
+  padding: 1rem 0rem 1rem 1rem;
+  background-color: white;
+}
+
+.notifications .info .info-inner .date {
+  padding: 1rem 0rem 1rem 1rem;
+  font-weight: 500;
+  color: #808080;
+}
+
 .other-videos {
   grid-area: other-videos;
-  background-color: rgb(119, 40, 4);
+  padding: 3rem;
+  overflow-y: scroll;
 }
+
+.other-videos .video-title {
+  color: #808080;
+}
+
 .comments-section {
   grid-area: comments-section;
-  background-color: teal;
+  padding: 2rem 1rem 0rem 1rem;
+  background-color: rgb(46, 46, 46);
+  overflow-y: scroll;
+}
+
+.comments-section .comment {
+  text-decoration: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.comments-section .comment .comment-text {
+  color: rgb(129, 129, 129) !important;
 }
