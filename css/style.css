@@ -18,26 +18,43 @@
 .--fc-light {
   color: #888888;
 }
-.--font-color-r {
+.--fc-red {
   color: #f05047;
 }
+.--fc-white {
+  color:white;
+}
+.--fw-small{
+ font-weight:200 ;
+
+}
+.--fw-medium{
+  font-weight: 400;
+}
+.--fw-large{
+  font-weight: 600;
+
+}
+.--fw-xl{
+  font-weight: 800;
+}
 .--fs-h {
-  font-size: 53px;
+  font-size: 48px;
 }
 .--fs-h2 {
   font-size: 18px;
 }
-.--fs-r {
+.--fs-regular {
   font-size: 16px;
 }
 .--bg-color-w {
   color: #f6f6f6;
 }
-.--margin-left {
-  margin-left: 350px;
+.--padding-left {
+  padding-left: 350px;
 }
-.--margin-right {
-  margin-right: 350px;
+.--padding-right {
+  padding-right: 350px;
 }
 .--margin-top {
   margin-top: 100px;
@@ -54,3 +71,53 @@ body {
   background-size: cover;
   position: relative;
 }
+.hero-grid {
+  display:grid;
+  grid-template-columns:300px 1214px 300px;
+  grid-template-rows: 50px 50px 150px 250px 150px auto;
+  grid-template-areas: 
+  '. . . '
+  '. logo .'
+  '. . .'
+  '. heading-p .'
+  '. project .'
+  '. . .'
+  ;
+  
+}
+.logo {
+  grid-area: logo;
+  flex-direction: row;
+  
+}
+.logo p{
+  
+}
+.heading-p{
+  grid-area: heading-p;
+
+}
+.project{
+  grid-area: project;
+
+}
+.project .button{
+  width: 120px;
+  height: 60px;
+  background-color: white;
+  border: 2px solid white;
+  
+}
+.project .button .text-project{
+  justify-content: center;
+
+
+}
+.project a{
+  color:rgb(112, 105, 105)
+}
+.project a:hover{
+  color: black;
+}
+
+
