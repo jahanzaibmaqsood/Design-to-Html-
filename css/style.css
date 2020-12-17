@@ -24,6 +24,7 @@
 .--fc-white {
   color:white;
 }
+fc
 .--fw-small{
  font-weight:200 ;
 
@@ -142,7 +143,7 @@ body {
   '. . . .'
   '. our-services-h data-visuals .'
   '. . . .'
-  '. our-works paragraph white-bg'
+  'white-bg1 our-works paragraph white-bg'
   ;
 }
 .our-services-h{
@@ -164,6 +165,10 @@ body {
   padding-top:60px ;
 }
 .white-bg{
+  grid-area: white-bg1;
+  background-color:#ffffff;
+}
+.white-bg1{
   grid-area: white-bg;
   background-color:#ffffff;
 }
@@ -239,7 +244,7 @@ body {
   grid-template-columns: 300px 450px 450px 300px;
   grid-template-rows:10vh 10vh ;
   grid-template-areas: 
-  '. . .'
+  '. . . .'
   '. read-our-minds-h read-our-minds-h-p .'
   ;
 }
@@ -250,6 +255,67 @@ body {
 .read-our-minds-h-p{
   grid-area:read-our-minds-h-p;
 }
+.read-our-minds-main-grid{
+  display: grid;
+  grid-template-columns:300px 500px 200px 200px 300px ;
+  grid-template-rows:5vh 5vh 15vh 10vh 15vh 15vh 10vh;
+  grid-template-areas:
+  '. . . . .'
+  '. title-discription date who .'
+  '. weekly digits name .'
+  '. somethin-new digits2 name2 .'
+  '. image image image image .'
+  '. finally digits3 name3 .'
+   ;
+}
+.title-discription{
+  grid-area: title-discription;
+}
+.date{
+  grid-area: date;
+}
+.who{
+  grid-area: who;
+}
+.weekly{
+  grid-area: weekly;
+}
+.digits{
+  grid-area: digits;
+}
+.name{
+  grid-area: name;
+
+}
+.somethin-new{
+  grid-area: somethin-new;
+}
+.digits2{
+  grid-area: digits2;
+}
+.name2{
+  grid-area: name2;
+}
+.image{
+grid-area: image;
+}
+.finally{
+  grid-area: finally;
+}
+.digits3{
+  grid-area: digits3;
+}
+.name3{
+  grid-area: name3;
+}
+
+
+
+
+
+
+
+
 
 
 
