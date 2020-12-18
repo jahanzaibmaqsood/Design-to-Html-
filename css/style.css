@@ -312,7 +312,15 @@ body {
 grid-area: image;
 background: url(../images/Rectangle\ 7.png);
 position: relative;
+justify-content: space-between;
+flex-direction: row;
+
 }
+.read-our-minds-main-grid .image .paragraph-2{
+  padding-left: 150px;
+  
+}
+
 .finally{
   grid-area: finally;
 }
