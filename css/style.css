@@ -314,11 +314,18 @@ background: url(../images/Rectangle\ 7.png);
 position: relative;
 justify-content: space-between;
 flex-direction: row;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
 
 }
 .read-our-minds-main-grid .image .paragraph-2{
-  padding-left: 150px;
+  padding-left: 200px;
   
+}
+.read-our-minds-main-grid .image .paragraph-3{
+  padding-right: 70px;
 }
 
 .finally{
