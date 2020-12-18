@@ -22,21 +22,18 @@
   color: #f05047;
 }
 .--fc-white {
-  color:white;
+  color: white;
 }
-fc
-.--fw-small{
- font-weight:200 ;
-
+fc .--fw-small {
+  font-weight: 200;
 }
-.--fw-medium{
+.--fw-medium {
   font-weight: 400;
 }
-.--fw-large{
+.--fw-large {
   font-weight: 600;
-
 }
-.--fw-xl{
+.--fw-xl {
   font-weight: 700;
 }
 .--fs-h {
@@ -51,11 +48,11 @@ fc
 .--bg-color-w {
   background-color: #ffffff;
 }
-.--bg-color-light-grey{
-  background-color:#f6f6f6;
+.--bg-color-light-grey {
+  background-color: #f6f6f6;
 }
-.--bg-black{
-  background-color:#28282e;
+.--bg-black {
+  background-color: #28282e;
 }
 .--padding-left {
   padding-left: 300px;
@@ -79,285 +76,243 @@ body {
   position: relative;
 }
 .hero-grid {
-  display:grid;
-  grid-template-columns:300px 1214px 300px;
+  display: grid;
+  grid-template-columns: 300px 1214px 300px;
   grid-template-rows: 50px 50px 150px 250px 150px auto;
-  grid-template-areas: 
-  '. . . '
-  '. logo .'
-  '. . .'
-  '. heading-p .'
-  '. project .'
-  '. . .'
-  ;
-  
+  grid-template-areas:
+    ". . . "
+    ". logo ."
+    ". . ."
+    ". heading-p ."
+    ". project ."
+    ". . .";
 }
 .logo {
   grid-area: logo;
   flex-direction: row;
-  
 }
-.logo p{
-  
+.logo p {
 }
-.heading-p{
+.heading-p {
   grid-area: heading-p;
-
 }
-.project{
+.project {
   grid-area: project;
-
 }
-.project .button{
+.project .button {
   width: 120px;
   height: 60px;
   border: 2px solid white;
-  
-
-  
 }
-.project .button .text-project{
+.project .button .text-project {
   justify-content: center;
-  color:white;
-
-
-
+  color: white;
 }
-.project a{
-  color:lightgray;
-    text-decoration:none;
+.project a {
+  color: lightgray;
+  text-decoration: none;
 }
-.project a:hover{
+.project a:hover {
   background-color: black;
 }
-.our-services{
-  width:100%;
-  height:100vh;
-
+.our-services {
+  width: 100%;
+  height: 100vh;
 }
-.our-services-grid{
-  display:grid;
-  grid-template-columns:300px 350px 800px 200px;
-  grid-template-rows:10vh 50vh 10vh 30vh;
+.our-services-grid {
+  display: grid;
+  grid-template-columns: 300px 350px 800px 200px;
+  grid-template-rows: 10vh 50vh 10vh 30vh;
   grid-template-areas:
-  '. . . .'
-  '. our-services-h data-visuals .'
-  '. . . .'
-  'white-bg1 our-works paragraph white-bg'
-  ;
+    ". . . ."
+    ". our-services-h data-visuals ."
+    ". . . ."
+    "white-bg1 our-works paragraph white-bg";
 }
-.our-services-h{
-  grid-area:our-services-h;
+.our-services-h {
+  grid-area: our-services-h;
 }
-.data-visuals{
-  grid-area:data-visuals;
+.data-visuals {
+  grid-area: data-visuals;
 }
-.our-works{
+.our-works {
   grid-area: our-works;
 }
-.paragraph{
-  grid-area:paragraph;
+.paragraph {
+  grid-area: paragraph;
   background-color: ;
 }
-.our-services-grid .paragraph{
+.our-services-grid .paragraph {
   flex-direction: row;
-  padding-left:140px;
-  padding-top:60px ;
+  padding-left: 140px;
+  padding-top: 60px;
 }
-.white-bg{
+.white-bg {
   grid-area: white-bg1;
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
-.white-bg1{
+.white-bg1 {
   grid-area: white-bg;
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
-.our-services-grid .our-services-h{
+.our-services-grid .our-services-h {
   flex-direction: column;
   justify-content: center;
   padding-top: 20px;
 }
-.our-services-grid .our-works{
+.our-services-grid .our-works {
   flex-direction: column;
   justify-content: center;
   padding-top: 20px;
 }
 
-.project-title-here{
-  width:100%;
+.project-title-here {
+  width: 100%;
   height: 80vh;
-
 }
-.project-title-here-grid{
-  display:grid;
+.project-title-here-grid {
+  display: grid;
   grid-template-columns: 300px 450px 450px 300px;
   grid-template-rows: 10vh 60vh 10vh;
-  grid-template-areas: 
-  '. . . .'
-  '. project-title-here-h laptop-image .'
-  '. . . .'
-  ;
-
+  grid-template-areas:
+    ". . . ."
+    ". project-title-here-h laptop-image ."
+    ". . . .";
 }
-.project-title-here-h{
-  grid-area:project-title-here-h;
+.project-title-here-h {
+  grid-area: project-title-here-h;
   padding-top: 60px;
-  
 }
-.laptop-image{
-  grid-area:laptop-image;
+.laptop-image {
+  grid-area: laptop-image;
 }
-.project-title-here-h h1{
-
+.project-title-here-h h1 {
 }
 
-.project-title-here-grid .project-title-here-h .see-it-button{
+.project-title-here-grid .project-title-here-h .see-it-button {
   width: 100px;
   height: 40px;
   background-color: #28282e;
-  border:2px solid white;
-  margin-top:50px;
+  border: 2px solid white;
+  margin-top: 50px;
   flex-direction: row;
   justify-content: center;
-
 }
-.project-title-here-grid .project-title-here-h .see-it-button P{
+.project-title-here-grid .project-title-here-h .see-it-button P {
   font-size: 10px;
   padding-top: 10px;
 }
-.project-title-here-grid .project-title-here-h a{
+.project-title-here-grid .project-title-here-h a {
   text-decoration: none;
-  color:white;
+  color: white;
 }
-.project-title-here-grid .laptop-image img{
-  
+.project-title-here-grid .laptop-image img {
   padding-top: 60px;
 }
-.read-our-minds{
+.read-our-minds {
   width: 100%;
-  height:auto;
-
-
+  height: auto;
 }
-.read-our-minds-top-grid{
+.read-our-minds-top-grid {
   display: grid;
   grid-template-columns: 300px 450px 450px 300px;
-  grid-template-rows:10vh 10vh ;
-  grid-template-areas: 
-  '. . . .'
-  '. read-our-minds-h read-our-minds-h-p .'
-  ;
-}
-.read-our-minds-h{
-  grid-area:read-our-minds-h;
-
-}
-.read-our-minds-h-p{
-  grid-area:read-our-minds-h-p;
-}
-.read-our-minds-main-grid{
-  display: grid;
-  grid-template-columns:300px 500px 100px 150px 150px auto;
-  grid-template-rows:10vh 10vh 1px 25vh 25vh 25vh 5vh 5vh;
+  grid-template-rows: 10vh 10vh;
   grid-template-areas:
-  '. . . . . .'
-  '. title-discription date . who .'
-  '. hr hr hr hr .'
-  '. weekly digits . name .'
-  '. somethin-new digits2 . name2 .'
-  '. image image image image .'
-  '. finally digits3 name3 . .'
-   ;
+    ". . . ."
+    ". read-our-minds-h read-our-minds-h-p .";
 }
-.title-discription{
+.read-our-minds-h {
+  grid-area: read-our-minds-h;
+}
+.read-our-minds-h-p {
+  grid-area: read-our-minds-h-p;
+}
+.read-our-minds-main-grid {
+  display: grid;
+  grid-template-columns: auto 300px 300px 300px 300px auto;
+  grid-template-rows: 10vh 10vh 1px 25vh 25vh 25vh 5vh 5vh;
+  grid-template-areas:
+    ". . . . . ."
+    ". title-discription date . who ."
+    ". hr hr hr hr ."
+    ". weekly digits . name ."
+    ". somethin-new digits2 . name2 ."
+    ". image image image image ."
+    ". finally digits3 name3 . .";
+}
+.title-discription {
   grid-area: title-discription;
   flex-direction: column;
   justify-content: end;
 }
-.date{
+.date {
   grid-area: date;
   flex-direction: column;
   justify-content: end;
 }
-.who{
+.who {
   grid-area: who;
   flex-direction: column;
-  justify-content:flex-end;
+  justify-content: flex-end;
   margin-left: 10px;
-  
-  
 }
-.weekly{
+.weekly {
   grid-area: weekly;
 }
-.digits{
+.digits {
   grid-area: digits;
-  
-
 }
-.name{
+.name {
   grid-area: name;
-
 }
-.somethin-new{
+.somethin-new {
   grid-area: somethin-new;
 }
-.digits2{
+.digits2 {
   grid-area: digits2;
 }
-.name2{
+.name2 {
   grid-area: name2;
 }
-.image{
-grid-area: image;
-background: url(../images/Rectangle\ 7.png);
-position: relative;
-justify-content: space-between;
-flex-direction: row;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-
-
+.image {
+  grid-area: image;
+  background: url(../images/Rectangle\ 7.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+    'paragraph-1 . paragraph-2 paragraph-3'
+  ;
 }
-.read-our-minds-main-grid .image .paragraph-2{
+
+.read-our-minds-main-grid .image .paragraph-1 {
+  grid-area: paragraph-1
   padding-left: 200px;
-  
-}
-.read-our-minds-main-grid .image .paragraph-3{
-  padding-right: 70px;
 }
 
-.finally{
+.read-our-minds-main-grid .image .paragraph-2 {
+  grid-area: paragraph-2
+  padding-left: 200px;
+}
+.read-our-minds-main-grid .image .paragraph-3 {
+  grid-area: paragraph-3;
+}
+
+.finally {
   grid-area: finally;
 }
-.digits3{
+.digits3 {
   grid-area: digits3;
 }
-.name3{
+.name3 {
   grid-area: name3;
 }
-.hr{
-  grid-area:hr;
-  width:100%;
-  text-align:right;
-  margin-left:0
+.hr {
+  grid-area: hr;
+  width: 100%;
+  text-align: right;
+  margin-left: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
