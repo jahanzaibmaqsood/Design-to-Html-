@@ -391,6 +391,35 @@ body {
 .slider{
   grid-area: slider;
 }
+
+.slider .carousel-indicators{
+  bottom: -70px;
+}
+#carouselExampleCaptions li{
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: gray;
+  background-clip: padding-box;
+  border-top: none;
+  border-bottom: none;
+  opacity: .5;
+  height: 15px;
+  transition: opacity .6s ease;
+  width: 15px;
+  border-radius: 50px !important;
+}
+
+#carouselExampleCaptions li.active{
+  background-color: white;
+}
+
 .slow-life-grid .slow-life-h p{
   flex-direction: row;
   justify-content:center;
