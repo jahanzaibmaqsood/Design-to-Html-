@@ -18,13 +18,20 @@
 .--fc-light {
   color: #888888;
 }
+.--footer-fc{
+  color: #57575c;
+}
 .--fc-red {
   color: #f05047;
 }
 .--fc-white {
   color: white;
 }
-fc .--fw-small {
+.--horizontal-line-color{
+  color: #f6f6f6;
+
+}
+.--fw-small {
   font-weight: 200;
 }
 .--fw-medium {
@@ -39,11 +46,17 @@ fc .--fw-small {
 .--fs-h {
   font-size: 48px;
 }
+.--fs-normal{
+  font-size: 24px;
+}
 .--fs-h2 {
   font-size: 18px;
 }
 .--fs-regular {
   font-size: 16px;
+}
+.--fs-small{
+  font-size: 14px;
 }
 .--bg-color-w {
   background-color: #ffffff;
@@ -53,6 +66,9 @@ fc .--fw-small {
 }
 .--bg-black {
   background-color: #28282e;
+}
+.--bg-red{
+  background-color: #ef4035;
 }
 .--padding-left {
   padding-left: 300px;
@@ -229,16 +245,19 @@ body {
 }
 .read-our-minds-main-grid {
   display: grid;
-  grid-template-columns: auto 300px 300px 300px 300px auto;
-  grid-template-rows: 10vh 10vh 1px 25vh 25vh 25vh 5vh 5vh;
+  grid-template-columns: auto 500px 100px 150px 150px auto;
+  grid-template-rows: 10vh 10vh 1px 25vh 1px 25vh 25vh 20vh 1px 10vh ;
   grid-template-areas:
     ". . . . . ."
     ". title-discription date . who ."
     ". hr hr hr hr ."
     ". weekly digits . name ."
+    ". hr-2 hr-2 hr-2 hr-2 ."
     ". somethin-new digits2 . name2 ."
     ". image image image image ."
-    ". finally digits3 name3 . .";
+    ". finally digits3 . name3 ."
+    ". hr-3 hr-3 hr-3 hr-3 ."
+    ". see-all-articles see-all-articles see-all-articles see-all-articles .";
 }
 .title-discription {
   grid-area: title-discription;
@@ -255,6 +274,18 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   margin-left: 10px;
+}
+.hr-1{
+  grid-area:hr;
+  border-bottom: 1px solid #e5e5e5;
+}
+.hr-2{
+  grid-area:hr-2;
+  border-bottom: 1px solid #e5e5e5;
+}
+.hr-3{
+  grid-area:hr-3;
+  border-bottom: 1px solid #e5e5e5;
 }
 .weekly {
   grid-area: weekly;
@@ -281,10 +312,10 @@ body {
   background-position: center;
   background-size: cover;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 500px 100px 150px 150px;
   grid-template-rows: 100%;
   grid-template-areas: 
-    'paragraph-1 . paragraph-2 paragraph-3'
+    'paragraph-1 . paragraph-2  paragraph-3'
   ;
 }
 
@@ -310,9 +341,84 @@ body {
 .name3 {
   grid-area: name3;
 }
-.hr {
-  grid-area: hr;
+
+.see-all-articles{
+  
+}
+
+.who-are-we-grid{
+  display: grid;
+  grid-template-columns: 300px 300px 800px 200px;
+  grid-template-rows: 15vh 50vh 10vh;
+  grid-template-areas:
+    ". . . ."
+    ". who-are-we-h data-visuals2 ."
+    ". . . ."
+    ;
+
+}
+.who-are-we-h{
+  grid-area:who-are-we-h;
+  padding-top:100px;
+  
+}
+.data-visuals2{
+  grid-area: data-visuals2;
+}
+.who-are-we-grid .meet-the-team{
+  flex-direction: row;
+  
+}
+.who-are-we-grid .meet-the-team a{
+
+  color: #f05047
+}
+.slow-life-grid{
+  display: grid;
+  grid-template-columns: 300px 50px 900px 50px 300px;
+  grid-template-rows: 8vh 25vh 65vh 15vh;
+  grid-template-areas:
+  ". . . . ."
+  ". . slow-life-h . ."
+  ". . slider . ."
+
+
+  ;
+}
+.slow-life-h{
+  grid-area: slow-life-h;
+}
+.slider{
+  grid-area: slider;
+}
+.slow-life-grid .slow-life-h p{
+  flex-direction: row;
+  justify-content:center;
+}
+.slow-life-grid .slow-life-h .slow-life-p{
+  flex-direction: row;
+  justify-content:center;
+}
+.lets-talk-button{
   width: 100%;
-  text-align: right;
-  margin-left: 0;
+  height: 10vh;
+  flex-direction:row;
+  justify-content: center;
+}
+.footer{
+  
+  width: 100%;
+  height:18vh
+ 
+}
+.footer-links{
+  justify-content:space-between;
+  flex-direction: row;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.footer-links a{
+  text-decoration:none;
+  color: #57575c;
+
 }
