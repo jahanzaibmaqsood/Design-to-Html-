@@ -218,4 +218,20 @@ body {
   bottom: 27px;
   left: 95px;
 }
+/* 1440px
+   1024
+   768
+   425  */
 
+   @media screen and (max-width:1440px){
+
+   }
+  @media screen and (max-width:1024px){
+     
+   }
+   @media screen and (max-width:768px){
+     
+  }
+  @media screen and (max-width:425px){
+     
+  }
