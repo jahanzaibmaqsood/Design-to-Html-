@@ -244,6 +244,7 @@ body {
 
    }
   @media screen and (max-width:1024px){
+
     .bottom-grid{
       display:grid;
       grid-template-columns:50px 300px 150px 100px auto;
@@ -282,36 +283,63 @@ body {
  
     width: 250px;
   }
+  .right-line{
+    font-size: 100px;
+    padding: 120px 0px 0px 100px;
+  }
+  .main__navigation {
+    padding: 0.8rem 150px;
+  }
+    
+ }
 }
    @media screen and (max-width:768px){
      .bottom-grid .cell-no h1{
        font-size: 28px;
        padding-top:10px;
-     }
+      }
      .bottom-left-line {
       margin-left: 0px;     
-  }
-  .paragraph {
+       }
+     .paragraph {
     margin-left: 34%;
     
-}
-.paragraph::before{
+      }
+    .paragraph::before{
  
-  width: 200px;
-}
-.bottom-grid .date-line .bottom-left-line .line::before{
+      width: 200px;
+       }
+     .bottom-grid .date-line .bottom-left-line .line::before{
   
-  left:75px;
-}
-.bottom-left-line p:nth-of-type(2){
-  margin-left: 60px;
-}
-.bottom-grid{
+      left:75px;
+       } 
+      .bottom-left-line p:nth-of-type(2){
+        margin-left: 60px;
+        }
+       .bottom-grid{
 
-  grid-template-columns:20px 240px 110px 100px auto;
+        grid-template-columns:20px 240px 110px 100px auto;
   
-}
+        }
+      .paragraph{
+       margin-top: 60px;
+       }
+      .right-numbers{
+  
+       right: 23px;
+       }
+       .main__navigation {
+          padding: 0.5rem 100px;
+       }
+
+    }
+
+
 
   @media screen and (max-width:425px){
+    .main__navigation {
+      padding: 0.5rem 120px;
      
+    
+
   }
