@@ -1,4 +1,5 @@
 /* Main color variables */
+
 @font-face {
   font-family: garamond-r;
   src: url(../font/AGaramondPro-Regular.otf);
@@ -15,14 +16,13 @@
 }
 
 /* Main CSS */
-*:focus,
-*:hover {
+
+*:focus, *:hover {
   outline: none !important;
   border: none !important;
 }
 
-html,
-body {
+html, body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0px;
@@ -126,19 +126,19 @@ body {
   transform: translateY(-50%);
 }
 
-.right-line{
+.right-line {
   font-size: 100px;
   padding: 150px 0px 0px 150px;
 }
 
-.paragraph{
+.paragraph {
   width: 215px;
   margin-left: 35%;
   margin-top: 100px;
   position: relative;
 }
 
-.paragraph::before{
+.paragraph::before {
   content: '';
   border-top: 1px solid #000000;
   width: 350px;
@@ -146,30 +146,29 @@ body {
   top: -20px;
 }
 
-.bottom-grid .see-all{
+.bottom-grid .see-all {
   text-decoration: underline;
   color: gray !important;
-  
 }
 
-.see-all a{
+.see-all a {
   color: gray !important;
 }
 
-.left-social{
+.left-social {
   position: absolute;
   top: 70%;
   transform: rotate(-90deg);
 }
 
-.left-social a{
+.left-social a {
   display: inline-block;
   margin-right: 20px;
   color: #000000;
   text-decoration: underline;
 }
 
-.left-social .line{
+.left-social .line {
   position: absolute;
   border-top: 1px solid #000000;
   width: 200px;
@@ -177,19 +176,19 @@ body {
   right: -200px;
 }
 
-.right-numbers{
+.right-numbers {
   position: absolute;
   text-align: right;
   top: 30%;
   right: 50px;
 }
 
-.right-numbers li:nth-of-type(1){
+.right-numbers li:nth-of-type(1) {
   font-size: 48px;
   margin-bottom: 220px;
 }
 
-.right-numbers .line::after{
+.right-numbers .line::after {
   position: absolute;
   content: '';
   border-right: 1px solid #000000;
@@ -198,39 +197,41 @@ body {
   right: 12px;
 }
 
-.bottom-left-line{
+.bottom-left-line {
   display: flex;
   margin-left: 50px;
   position: relative;
 }
 
-.bottom-left-line p:nth-of-type(2){
+.bottom-left-line p:nth-of-type(2) {
   margin-left: 220px;
 }
 
-.bottom-grid .date-line .bottom-left-line .line::before{
-  content:'';
+.bottom-grid .date-line .bottom-left-line .line::before {
+  content: '';
   border-bottom: 1px solid #000000;
   width: 180px;
   position: absolute;
   bottom: 27px;
   left: 95px;
 }
-.bottom-grid{
-  display:grid;
-  grid-template-columns:50px 450px 200px 100px auto;
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 50px 450px 200px 100px auto;
   grid-template-rows: 7vh;
-  grid-template-areas: 
-  ". date-line cell-no see-all ."
-  ;
+  grid-template-areas: ". date-line cell-no see-all .";
 }
-.date-line{
-  grid-area:date-line ;
+
+.date-line {
+  grid-area: date-line;
 }
-.cell-no{
+
+.cell-no {
   grid-area: cell-no;
 }
-.see-all{
+
+.see-all {
   grid-area: see-all;
 }
 
@@ -239,107 +240,91 @@ body {
    768
    425  */
 
-   @media screen and (max-width:1440px){
-
-
-   }
-  @media screen and (max-width:1024px){
-
-    .bottom-grid{
-      display:grid;
-      grid-template-columns:50px 300px 150px 100px auto;
+@media screen and (max-width:1440px) {
+  .left-social {
+    top: 80%;
+  }
+  .cell-no h1 {
+    font-size: 30px;
+    padding-top: 5px;
+  }
+  @media screen and (max-width:1024px) {
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 50px 300px 150px 100px auto;
       grid-template-rows: 7vh;
-      grid-template-areas: 
-      ". date-line cell-no see-all ."
-      ;
+      grid-template-areas: ". date-line cell-no see-all .";
     }
-    .date-line{
-      grid-area:date-line ;
+    .cell-no h1 {
+      font-size: 30px;
+      padding-top: 5px;
     }
-    .cell-no{
-      grid-area: cell-no;
-    }
-    .see-all{
-      grid-area: see-all;
-    }
-    .bottom-grid .date-line .bottom-left-line .line::before{
-      content:'';
+    .bottom-grid .date-line .bottom-left-line .line::before {
+      content: '';
       border-bottom: 1px solid #000000;
       width: 40px;
       position: absolute;
       bottom: 27px;
-  
-     
-   }
-   .bottom-left-line p:nth-of-type(2){
-    margin-left: 80px;
-  }
-  .bottom-left-line{
-    display: flex;
-    margin-left: 10px;
-    position: relative;
-  }
-  .paragraph::before{
- 
-    width: 250px;
-  }
-  .right-line{
-    font-size: 100px;
-    padding: 120px 0px 0px 100px;
-  }
-  .main__navigation {
-    padding: 0.8rem 150px;
-  }
-    
- }
-}
-   @media screen and (max-width:768px){
-     .bottom-grid .cell-no h1{
-       font-size: 28px;
-       padding-top:10px;
-      }
-     .bottom-left-line {
-      margin-left: 0px;     
-       }
-     .paragraph {
-    margin-left: 34%;
-    
-      }
-    .paragraph::before{
- 
-      width: 200px;
-       }
-     .bottom-grid .date-line .bottom-left-line .line::before{
-  
-      left:75px;
-       } 
-      .bottom-left-line p:nth-of-type(2){
-        margin-left: 60px;
-        }
-       .bottom-grid{
-
-        grid-template-columns:20px 240px 110px 100px auto;
-  
-        }
-      .paragraph{
-       margin-top: 60px;
-       }
-      .right-numbers{
-  
-       right: 23px;
-       }
-       .main__navigation {
-          padding: 0.5rem 100px;
-       }
-
     }
-
-
-
-  @media screen and (max-width:425px){
+    .bottom-left-line p:nth-of-type(2) {
+      margin-left: 80px;
+    }
+    .bottom-left-line {
+      display: flex;
+      margin-left: 10px;
+      position: relative;
+    }
+    .paragraph::before {
+      width: 250px;
+    }
+    .paragraph {
+      margin-top: 80px;
+    }
+    .right-line {
+      font-size: 100px;
+      padding: 170px 0px 0px 100px;
+    }
     .main__navigation {
-      padding: 0.5rem 120px;
-     
-    
-
+      padding: 0.8rem 150px;
+    }
+    .left-social {
+      top: 80%;
+      left: -30;
+    }
+  }
+  @media screen and (max-width:768px) {
+    .main__navigation__right {
+      width: 190px;
+    }
+    .right-line {
+      font-size: 75px;
+      padding: 160px 0px 0px 65px;
+    }
+    .paragraph {
+      margin-top: 70px;
+      margin-left: 27%;
+    }
+    .left-social {
+      left: -30px;
+      top: 77%;
+    }
+    .right-numbers {
+      right: 30px;
+    }
+    .bottom-grid {
+      grid-template-columns: 20px 270px 80px 100px auto;
+    }
+    .cell-no h1 {
+      font-size: 20px;
+      padding-top: 15px;
+    }
+  }
+  @media screen and (max-width:425px) {
+    .main__navigation__left .line::before {
+      width: 45px;
+    }
+    .left-social {
+      left: -10px;
+      top: 80%;
+    }
   }
