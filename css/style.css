@@ -338,7 +338,7 @@ body {
 
 @media screen and (max-width:425px) {
   .bottom-grid {
-    grid-template-columns:1fr 2fr 1fr;
+    grid-template-columns:1fr 4fr 1fr;
     grid-template-rows:5vh 5vh 5vh;
     grid-template-areas:
      ". date-line ."
@@ -346,5 +346,66 @@ body {
      ". see-all ."
     ;
   }
+  .bottom-left-line {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .bottom-grid .date-line .bottom-left-line .line::before {
+    left: 93px;
+  }
+  .cell-no h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .bottom-grid .see-all {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .left-social {
+    left: -53px;
+    top: 80%;
+  }
+  .right-numbers {
+    right: 16px;
+    top: 36%;
+  }
+  .right-line {
+    font-size: 40px;
+    padding: 160px 0px 0px 38px;
+  }
+  .right-numbers li:nth-of-type(1) {
+    font-size: 29px;
+    padding-top: 18px;
+    margin-left: 20px;
+  }
+  .right-numbers .line::after {
+    height: 170px;
+  }
+  .paragraph {
+    margin-top: 60px;
+    margin-left: 15%;
+  }
+  .paragraph::before {
+    width: 190px;
+  }
+  .main__navigation__left .line::before{
+    width:60px;
+    left: -70px;
+  }
+  .main__navigation__left{
+    right:60px;
+  }
+  .main__navigation__right .line::before{
+    width: 60px;
+    right: -119px;
+  }
+  .main__navigation__right{
+    left:-60px;
+
+  }
+
 
 }
