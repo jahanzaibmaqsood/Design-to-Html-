@@ -253,7 +253,7 @@ body {
 @media screen and (max-width:1024px) {
   .bottom-grid {
     display: grid;
-    grid-template-columns: 50px 300px 150px 100px auto;
+    grid-template-columns: 80px 270px 150px 100px auto;
     grid-template-rows: 7vh;
     grid-template-areas: ". date-line cell-no see-all .";
   }
@@ -269,11 +269,14 @@ body {
     bottom: 27px;
   }
   .bottom-left-line p:nth-of-type(2) {
-    margin-left: 80px;
+    margin-left: 70px;
+  }
+  .bottom-left-line p:nth-of-type(1){
+    margin-left:7px;
   }
   .bottom-left-line {
     display: flex;
-    margin-left: 10px;
+    margin-left: 15px;
     position: relative;
   }
   .paragraph::before {
@@ -315,12 +318,25 @@ body {
     right: 30px;
   }
   .bottom-grid {
-    grid-template-columns: 20px 270px 80px 100px auto;
+    grid-template-columns: 70px 270px 80px 100px auto;
   }
   .cell-no h1 {
     font-size: 20px;
     padding-top: 15px;
   }
+  .bottom-grid .date-line .bottom-left-line .line::before {
+    left: 80px;
+    width:55px;
+  }
+  .bottom-grid .date-line .bottom-left-line .date-bt{
+    left:20px;
+  }
+  .bottom-left-line p:nth-of-type(1){
+    margin-left: 0px;
+  })
+  
+  
+
 }
 
 @media screen and (max-width:425px) {
@@ -332,6 +348,6 @@ body {
     top: 80%;
   }
   .right-line {
-    font-size: 75px
+    font-size: 50px
   }
 }
