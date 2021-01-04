@@ -149,7 +149,10 @@ body {
 .bottom-grid .see-all {
   text-decoration: underline;
   color: gray !important;
+
+  
 }
+
 
 .see-all a {
   color: gray !important;
@@ -247,6 +250,7 @@ body {
   .cell-no h1 {
     font-size: 30px;
     padding-top: 5px;
+    justify-content: flex-start;
   }
 }
 
@@ -318,16 +322,38 @@ body {
     right: 30px;
   }
   .bottom-grid {
-    grid-template-columns: 70px 270px 80px 100px auto;
+    grid-template-columns:1fr 4fr 1fr;
+    grid-template-rows:5vh 5vh 5vh;
+    grid-template-areas:
+     ". date-line ."
+     ". cell-no ."
+     ". see-all ."
   }
   .cell-no h1 {
     font-size: 20px;
     padding-top: 15px;
   }
-  .bottom-grid .date-line .bottom-left-line .line::before {
-    left: 80px;
-    width: 55px;
+  .bottom-left-line {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
   }
+  .bottom-grid .date-line .bottom-left-line .line::before {
+    left: 210px;
+    width:57px;
+  }
+}
+.cell-no h1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.bottom-grid .see-all {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+  
   .bottom-grid .date-line .bottom-left-line .date-bt {
     left: 20px;
   }
@@ -337,6 +363,14 @@ body {
 }
 
 @media screen and (max-width:425px) {
+  .body{
+    background: url(../images/hero.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  }
   .bottom-grid {
     grid-template-columns:1fr 4fr 1fr;
     grid-template-rows:5vh 5vh 5vh;
@@ -351,13 +385,15 @@ body {
     justify-content: center;
     flex-direction: row;
   }
-  .bottom-grid .date-line .bottom-left-line .line::before {
-    left: 93px;
-  }
   .cell-no h1 {
     display: flex;
     justify-content: center;
     flex-direction: row;
+  }
+  .bottom-grid .date-line .bottom-left-line .line::before{
+    left: 97px;
+    width: 57px;
+}
   }
   .bottom-grid .see-all {
     display: flex;
