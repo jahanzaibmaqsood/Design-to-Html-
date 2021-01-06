@@ -242,3 +242,12 @@ weight:400;
       .mt-3, .my-3 {
     margin-top: 1rem!important;
       }
+      .mt-5 .container .row .col-lg-6 h2{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-top: 4rem;
+      }
+      .mt-5 .container .row .col-lg-6 a{
+        padding-top: 4rem;
+      }
+  }
