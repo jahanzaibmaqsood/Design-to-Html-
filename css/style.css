@@ -15,7 +15,7 @@
 }
 
 .--fc-orange {
-    color: #866f6b;
+    color: #f36f57;
 }
 
 .--fc-black {
@@ -142,7 +142,7 @@ header .silverline h1{
     display: grid;
     width: 100%;
     grid-template-columns:1fr 1.4fr 1fr 1.5fr 1fr ;
-    grid-template-rows: 10vh 10vh 15vh 15vh 15vh 10vh 20vh;
+    grid-template-rows: 10vh 10vh 15vh 15vh 15vh 10vh 20vh 10vh;
     grid-template-areas: 
     ". . . . ."
     ". about-us . . ."
@@ -151,6 +151,7 @@ header .silverline h1{
     ". bg-p bg-p bg-p ."
     ". . . . ."
     ". visit call email ."
+    "copy-right copy-right copy-right copy-right copy-right"
     ;
 }
 .about-us{
@@ -177,7 +178,10 @@ header .silverline h1{
 
 }
 .visit{
-    grid-area: visit; 
+    grid-area: visit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
 }
 .visit img{
     width: 50px;
@@ -189,16 +193,171 @@ header .silverline h1{
 }
 .call{
     grid-area: call;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.call p a{
+    text-decoration: none;
+    color: black;
 }
 .email{
     grid-area: email;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
-footer{
-    width: 100%;
-    height: 10vh;
+.email p a{
+    text-decoration: none;
+    color: black;
+}
+.grey{
+    grid-area: grey-bg;
+}
+.copy-right{
+    grid-area: copy-right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 1440px
+    1024px
+    768px
+    425px
+    */
+@media screen and (max-width: 1440px){
 
 }
+@media screen and (max-width: 1024px){
+    header .header-grid {
+        display: grid;
+        grid-template-columns: 0.5fr 1.4fr 1fr 1.5fr 0.5fr;
+        ;
+        grid-template-rows: 20vh;
+        grid-template-areas: ". logo . navbar .";
+    }
+    .about-us-grid{
+        display: grid;
+        width: 100%;
+        grid-template-columns:0.5fr 1.4fr 1fr 1.5fr 0.5fr ;
+        grid-template-rows: 10vh 10vh 15vh 15vh 15vh 10vh 20vh 10vh;
+        grid-template-areas: 
+        ". . . . ."
+        ". about-us . . ."
+        ". paragaraph1 paragaraph1 paragaraph1 ."
+        ". paragaraph2 paragaraph2 paragaraph2 ."
+        ". bg-p bg-p bg-p ."
+        ". . . . ."
+        ". visit call email ."
+        "copy-right copy-right copy-right copy-right copy-right"
+        ;
+    }
+    header .logo img {
+        height: 100px;
+    }
+    header .silverline {
+        position: absolute;
+        margin: 270px 200px 200px 100px;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0rem;
+        font-size: 14px;
+    }
+    .paragaraph1{
+        grid-area: paragaraph1;
+    }
+    .paragaraph2{
+        grid-area: paragaraph2;
+    }
+}
+@media screen and (max-width: 768px){
+    header .header-grid {
+        display: grid;
+        grid-template-columns: 0.3fr 1.4fr 0.4fr 1.5fr 0.3fr;
+        ;
+        grid-template-rows: 20vh;
+        grid-template-areas: ". logo . navbar .";
+    }
+    .navbar {
+        grid-area: navbar;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        list-style-type: none;
+        
+    }
+    .header-grid .button .btn-group .btn{
+        width:90px;
+    }
+    header .silverline {
+        position: absolute;
+        margin: 260px 200px 200px 64px;
+    }
+    P{
+        font-size: 13px;
+    }
+    .about-us-grid{
+        display: grid;
+        width: 100%;
+        grid-template-columns:0.3fr 1.4fr 1fr 1.5fr 0.3fr ;
+        grid-template-rows: 5vh 10vh 20vh 20vh 15vh 10vh 20vh 10vh;
+        grid-template-areas: 
+        ". . . . ."
+        ". about-us . . ."
+        ". paragaraph1 paragaraph1 paragaraph1 ."
+        ". paragaraph2 paragaraph2 paragaraph2 ."
+        ". bg-p bg-p bg-p ."
+        ". . . . ."
+        ". visit call email ."
+        "copy-right copy-right copy-right copy-right copy-right"
+        ;
+    }
+    .about-us-grid .bg-p img {
+        max-width: auto;
+        height: 10px;
+    }
+    
+        
 
+}
+@media screen and (max-width: 425px){
+    header .header-grid {
+        display: grid;
+        grid-template-columns: 0.1fr 1.4fr 0.4fr 1.5fr 0.1fr;
+        ;
+        grid-template-rows: 20vh;
+        grid-template-areas: ". logo . navbar .";
+    }
+    header .silverline {
+        position: absolute;
+        margin: 260px 200px 200px 20px;
+    }
+    header .logo img {
+        height: 70px;
+    }
+    .about-us-grid{
+        display: grid;
+        width: 100%;
+        grid-template-columns:0.1fr 1.4fr 1fr 1.5fr 0.1fr ;
+        grid-template-rows: 5vh 10vh 20vh 20vh 15vh 10vh 20vh 10vh;
+        grid-template-areas: 
+        ". . . . ."
+        ". about-us . . ."
+        ". paragaraph1 paragaraph1 paragaraph1 ."
+        ". paragaraph2 paragaraph2 paragaraph2 ."
+        ". bg-p bg-p bg-p ."
+        ". . . . ."
+        ". visit call email ."
+        "copy-right copy-right copy-right copy-right copy-right"
+        ;
+    }
+    
+}
 
 
 
