@@ -1,0 +1,159 @@
+.--font {
+    font-family: 'Mukta', sans-serif;
+}
+
+.--fw-r {
+    font-weight: 400;
+}
+
+.--fw-m {
+    font-weight: 600;
+}
+
+.--fw-l {
+    font-weight: 800;
+}
+
+.--fc-orange {
+    color: #f36f57;
+}
+
+.--fc-black {
+    color: #212121;
+}
+
+.--fc-blue {
+    color: #302563;
+}
+
+.--fc-grey {
+    color: #2a2a2a;
+}
+
+.--fc-white {
+    color: white;
+}
+
+.--fs-l {
+    font-size: 5rempx;
+}
+
+.--fs-m {
+    font-size: 3.5rem;
+}
+
+.--fs-r {
+    font-size: 2.5rem;
+}
+
+.--fs-s {
+    font-size: 18px;
+}
+
+.--bg-white {
+    background-color: white;
+}
+
+.--bg-dwhite {
+    background-color: #f7f7f7;
+}
+
+.--bg-blue {
+    background-color: #302563;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+header {
+    background: url(../images/BANNER.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    font-size: 18px;
+}
+
+header .header-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr 1fr 1.5fr 1fr;
+    ;
+    grid-template-rows: 20vh;
+    grid-template-areas: ". logo . navbar .";
+}
+
+.logo {
+    grid-area: logo;
+}
+
+header .logo img {
+    width: 250x;
+    height: 150px;
+}
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.navbar p {
+    margin-top: 10px;
+}
+
+. .active {
+    border-bottom: 3px solid #f36f57;
+}     
+ .header-grid .navbar a{
+    text-decoration: none;
+    color: white;
+}
+header .silverline{
+    position: absolute;
+    margin:180px 200px 200px 260px;
+}
+.about-us-grid{
+    display: grid;
+    grid-template-columns:1fr 1.4fr 1fr 1.5fr 1fr ;
+    grid-template-rows: 10vh 10vh 15vh 15vh 15vh 15vh;
+    grid-template-areas: 
+    ". . . . ."
+    ". about-us . . ."
+    ". paragaraph1 paragaraph1 paragaraph1 ."
+    ". paragaraph2 paragaraph2 paragaraph2 ."
+    ". bg-p bg-p bg-p ."
+    ". . . . ."
+    ;
+}
+.about-us{
+    grid-area: about-us;
+}
+.paragaraph1{
+    grid-area: paragaraph1;
+}
+.paragaraph2{
+    grid-area: paragaraph2;
+}
+.bg-p{
+    grid-area:bg-p ;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.about-us-grid .bg-p img{
+    max-width:auto;
+    height:13px
+}
+
+
