@@ -15,7 +15,7 @@
 }
 
 .--fc-orange {
-    color: #f36f57;
+    color: #866f6b;
 }
 
 .--fc-black {
@@ -56,6 +56,12 @@
 
 .--bg-dwhite {
     background-color: #f7f7f7;
+}
+.--bg-dark-white{
+    background-color: #f5f3ff;
+}
+.--bg-orange{
+    background-color: #f36f57 !important;
 }
 
 .--bg-blue {
@@ -105,14 +111,21 @@ header .logo img {
     font-size: 18px;
     list-style-type: none;
 }
+.color{
+    background-color: ;
+}
 
 .navbar p {
     margin-top: 10px;
 }
-
-. .active {
-    border-bottom: 3px solid #f36f57;
-}     
+.active {
+    border-bottom: 3px solid #f36f57 !important;
+   
+}  
+hr{
+    margin: 0px auto !important;
+    width: 40%;
+}   
  .header-grid .navbar a{
     text-decoration: none;
     color: white;
@@ -121,10 +134,15 @@ header .silverline{
     position: absolute;
     margin:180px 200px 200px 260px;
 }
+header .silverline h1{
+    color: #f36f57 !important;
+}
+
 .about-us-grid{
     display: grid;
+    width: 100%;
     grid-template-columns:1fr 1.4fr 1fr 1.5fr 1fr ;
-    grid-template-rows: 10vh 10vh 15vh 15vh 15vh 15vh;
+    grid-template-rows: 10vh 10vh 15vh 15vh 15vh 10vh 20vh;
     grid-template-areas: 
     ". . . . ."
     ". about-us . . ."
@@ -132,6 +150,7 @@ header .silverline{
     ". paragaraph2 paragaraph2 paragaraph2 ."
     ". bg-p bg-p bg-p ."
     ". . . . ."
+    ". visit call email ."
     ;
 }
 .about-us{
@@ -150,10 +169,36 @@ header .silverline{
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 .about-us-grid .bg-p img{
     max-width:auto;
-    height:13px
+    height:13px;
+
 }
+.visit{
+    grid-area: visit; 
+}
+.visit img{
+    width: 50px;
+    height: 60px;
+    ;
+}
+.visit p{
+
+}
+.call{
+    grid-area: call;
+}
+.email{
+    grid-area: email;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+
+}
+
+
 
 
