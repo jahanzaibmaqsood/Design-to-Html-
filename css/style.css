@@ -1,306 +1,105 @@
-.--font {
-    font-family: 'Mukta', sans-serif;
+.--fs-r{
+    font-size: 1rem;
+}
+.--fs-m{
+    font-size: 1.5rem;
+}
+.--fs-l{
+    font-size: 3.5rem;
+}
+.--fw-r{
+font-weight: 400;
+}
+.--fw-m{
+    font-weight: 600;
+    }
+.--fw-l{
+  font-weight: 700;
 }
 .--fw-b{
     font-weight: bold;
 }
-
-.--fw-r {
-    font-weight: 400;
+.--fc-pink{
+    color: #e00273;
 }
-
-.--fw-m {
-    font-weight: 600;
+.--fc-blue{
+    color: #322153;
 }
-.--fw-l{
-    font-weight: 700;
-}
-
-.--fw-xl {
-    font-weight: 800;
-}
-
-
-.--fc-orange {
-    color: #f36f57;
-}
-
-.--fc-black {
-    color: #212121;
-}
-
-.--fc-blue {
-    color: #302563;
-}
-
-.--fc-grey {
-    color: #2a2a2a;
-}
-
-.--fc-white {
-    color: white;
-}
-.--fc-l-white{
-    color: #555555;
-}
-]
-
-.--fs-l {
-    font-size: 4rem;
-}
-
-.--fs-m {
-    font-size: 3.5rem;
-}
-
-.--fs-r {
-    font-size: 2.5rem;
-}
-
-.--fs-s {
-    font-size: 18px;
-}
-
-.--bg-white {
-    background-color: white;
-}
-
-.--bg-dwhite {
-    background-color: #f7f7f7;
-}
-.--bg-dark-white{
-    background-color: #f5f3ff;
-}
-.--bg-orange{
-    background-color: #f36f57 !important;
-}
-
-.--bg-blue {
-    background-color: #302563;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Mukta', sans-serif;
-}
-
-header {
-    background: url(../images/BANNER.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    font-size: 18px;
-}
-
-header{
-    background: url(../images/BANNER1.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-}
-header .charachters{
-    display: flex;
-    position: relative;
-
-}
-header .charachters img{
-    height: 700px;
-    width: 700px;
-}
-header .container .nav-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:20vh ;
-    grid-template-areas: 
-    "logo nav-bar"
+.--fc-text{
+    color: #65587e
     ;
-
 }
-.logo{
+.--bg-blue{
+    background-color: #322153;
+}
+.--bg-pink{
+    background-color: #e00273;
+}
+.--bg-grey{
+    background-color: #f2f2f3;
+}
+html{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+}
+header .nav-bar .container .nav-bar-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1.5fr;
+    grid-template-rows: 15vh;
+    grid-template-areas:
+    "logo nav-items cash-offer"
+    ;
+}
+.logo {
     grid-area: logo;
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-
 }
-.nav-bar{
-    grid-area: nav-bar;
+header .nav-bar .container .nav-bar-grid .logo img{
+    height: 110px;
+    width: 190px;
+    
+}
+header .nav-bar .container .nav-bar-grid .nav-items a{
+    padding: 0 20px 0 0;
+    text-decoration: none;
+}
+
+.nav-items{
+    grid-area: nav-items;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 0 0 0 180px;
 }
-header .container .nav-grid .nav-bar .nav-bar-con{
-    width: 300px;
-    height: 10vh;
-}
-.active {
-    border-bottom: 3px solid #f36f57 !important;
-   
-}  
-hr{
-    margin: 0px auto !important;
-    width: 40%;
-}
-header .nav-grid .nav-bar  a{
-    text-decoration: none;
-    color: white;
-}
-.silverlne-health .container .silverlne-health-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20vh 40vh 20vh;
-    grid-template-areas: 
-    "."
-    "silver-line-health-h"
-    "."
-    ;
-}
-.silver-line-health-h{
-    grid-area: silver-line-health-h;
+header .nav-bar .container .nav-bar-grid .nav-items a .get-cash-button{
+    width: 150px;
+    height: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.about-us .container .about-us-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10vh 15vh 15vh 15vh 20vh 15vh;
-    grid-template-areas: 
-    "."
-    "about-us"
-    "paragaraph1"
-    "paragaraph2"
-     "bg-p"
-     "."
-    ;
-}
-.about-us{
-    grid-area: about-us;
-}
-.paragaraph1{
-    grid-area:paragaraph1 ;
-}
-.paragaraph2{
-    grid-area:paragaraph2 ;
-}
-.bg-p{
-    grid-area: bg-p;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    text-align: center;
- } 
- .about-us .container .about-us-grid .bg-p img{
-    max-width:auto;
-    height:13px;
- }
- .contact-us .container .contact-us-grid{
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 20vh;
-     grid-template-areas:
-     "visit-our-location  give-us-a-call send-us-an-emal" 
-     ;
- }
- .visit-our-location{
-     grid-area: visit-our-location;
-
- }
- .give-us-a-call{
-     grid-area: give-us-a-call;
- }
- .send-us-an-emal{
-     grid-area: send-us-an-emal;
- }
- .visit-our-location {
-    grid-area: visit-our-location;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    border-radius: 60px;
 }
-.give-us-a-call{
-    grid-area: give-us-a-call;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.send-us-an-emal{
-    grid-area: send-us-an-emal;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-.contact-us .container .contact-us-grid .visit-our-location a{
-    text-decoration: none;
-    color: black;
-}
-.contact-us .container .contact-us-grid .give-us-a-call a{
-    text-decoration: none;
-    color: black;
-}
-.contact-us .container .contact-us-grid .send-us-an-emal a{
-    text-decoration: none;
-    color: black;
-}
-.footer{
-    width: 100%;
-    height: 10vh;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-
-}
-.footer .container p{
-    display: flex;
-flex-direction:row;
-justify-content: center;
-align-items: center;
-}
-@media screen and (max-width: 1440px){
-
-}
-@media screen and (max-width: 1024px){
-    .nav-bar {
-        grid-area: nav-bar;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 0 0 85px;
+header .nav-bar .container .nav-bar-grid .nav-items a p{
+       margin-top: 0rem;
+         margin-bottom: 0.2rem;
     }
-    
-    
+header .nav-bar .container .nav-bar-grid .nav-items a .get-cash-button p{
+      color: white;
+}   
+.cash-offer{
+    grid-area: cash-offer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 0.5;
+    align-items: flex-end;
 }
-@media screen and (max-width: 768px){
-    .about-us .container .about-us-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 10vh 15vh 20vh 20vh 20vh 15vh;
-        grid-template-areas:
-            "."
-            "about-us"
-            "paragaraph1"
-            "paragaraph2"
-            "bg-p"
-            ".";
-    }
+header .nav-bar .container .nav-bar-grid .cash-offer p:nth-of-type(3){
+    font-size:  1rem; 
+    line-height: 1;
+    letter-spacing: -1.5px;
 }
-@media screen and (max-width: 425px){
-
-}
- 
-
-
-
-
-
