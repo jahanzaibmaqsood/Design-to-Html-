@@ -29,6 +29,9 @@ font-weight: 400;
     color: #65587e
     ;
 }
+.--fc-white{
+    color: white;
+}
 .--bg-blue{
     background-color: #322153;
 }
@@ -46,6 +49,7 @@ html{
 body{
     font-family: 'Red Hat Display', sans-serif;
 }
+
 header .nav-bar .container .nav-bar-grid {
     display: grid;
     grid-template-columns: 1fr 4fr 1.5fr;
@@ -59,7 +63,7 @@ header .nav-bar .container .nav-bar-grid {
 }
 header .nav-bar .container .nav-bar-grid .logo img{
     height: 110px;
-    width: 190px;
+    width: 130px;
     
 }
 header .nav-bar .container .nav-bar-grid .nav-items a{
@@ -103,3 +107,94 @@ header .nav-bar .container .nav-bar-grid .cash-offer p:nth-of-type(3){
     line-height: 1;
     letter-spacing: -1.5px;
 }
+
+  hr {
+    border:none;
+    height: 20px;
+       width: 100%;
+      height: 50px;
+      margin-top: 0;
+      border-bottom: 1px solid #1f1209;
+      box-shadow: 0 0px 50px 0px #333;
+   
+  }
+  .container .hero-page-grid {
+      display: grid;
+      grid-template-columns: 1fr 4fr 4fr 1fr;
+      grid-template-rows:15vh 10vh 7vh 20vh 15vh 15vh ;
+      grid-template-areas: 
+      ". hi garaph ."
+      ". enter-your-post garaph ."
+      ". offers-tick garaph ."
+      ". paragraph garaph ."
+      ". white-bg pink-bg ."
+      ;
+  }
+  .hi{
+      grid-area: hi;
+     
+  }
+  .garaph{
+      grid-area: garaph;
+  }
+  .offers-tick{
+      grid-area: offers-tick;
+      display:flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  .white-bg{
+      grid-area: white-bg;
+  }
+  .pink-bg{
+      grid-area: pink-bg;
+  }
+  .enter-your-post{
+      grid-area: enter-your-post;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  .paragraph{
+      grid-area: paragraph;
+  }
+.container .hero-page-grid .hi p:nth-of-type(1){
+         margin-bottom: 0rem;
+}
+.container .hero-page-grid .hi p:nth-of-type(2){
+    line-height: 1;
+    margin-bottom: 0rem;
+}
+.container .hero-page-grid .enter-your-post .input-group input{
+    
+    background-color: #fae5f1;
+
+}
+.container .hero-page-grid .enter-your-post .input-group {
+    width: 75%;
+    border-radius: 40px;
+}
+.container .hero-page-grid .enter-your-post .input-group .btn{
+    width: 70px;
+    background-color: #f87100;
+    color: white;
+    font-weight: 500;
+
+}
+.container .hero-page-grid .garaph img{
+    height:60vh;
+
+}
+.container .hero-page-grid .offers-tick img{
+    height: 25px;
+}
+.container .hero-page-grid .offers-tick p{
+    margin-bottom: -0.5rem;
+}
+
+
+
+
+
+  
