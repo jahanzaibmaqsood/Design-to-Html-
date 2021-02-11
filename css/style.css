@@ -41,6 +41,9 @@ font-weight: 400;
 .--bg-grey{
     background-color: #f2f2f3;
 }
+.--bg-white{
+    background-color: white;
+}
 html{
     box-sizing: border-box;
     margin: 0px;
@@ -121,7 +124,7 @@ header .nav-bar .container .nav-bar-grid .cash-offer p:nth-of-type(3){
   .container .hero-page-grid {
       display: grid;
       grid-template-columns: 1fr 4fr 4fr 1fr;
-      grid-template-rows:15vh 10vh 7vh 15vh 30vh;
+      grid-template-rows:15vh 10vh 7vh 25vh 23vh;
       grid-template-areas: 
       ". hi garaph ."
       ". enter-your-post garaph ."
@@ -160,22 +163,27 @@ header .nav-bar .container .nav-bar-grid .cash-offer p:nth-of-type(3){
      grid-area:bg-graph2 ;
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 30vh;
+     grid-template-rows: 23vh;
      grid-template-areas:
      "paragraph2"
       ;
   }
-  .bg-graph2 h3{
-    grid-area:bg-graph2 ;
-  }
+  
+
   .bg-graph3{
     grid-area:bg-graph3 ;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30vh;
+    grid-template-rows: 23vh;
     grid-template-areas:
     "paragraph3"
      ;
+ }
+ .container .hero-page-grid .bg-graph3 .time{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
  }
  .bg-graph4{
     grid-area: bg-graph4;
@@ -212,6 +220,41 @@ header .nav-bar .container .nav-bar-grid .cash-offer p:nth-of-type(3){
 }
 .container .hero-page-grid .offers-tick p{
     margin-bottom: -0.5rem;
+}
+.container .about-us-grid {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 5.5fr 1fr;
+    grid-template-rows: 7vh 8vh 70vh 15vh;
+    grid-template-areas:
+    ". . . ."
+    ". . about-us-h ."
+    ". company-detail about-us-p ."
+    ". .  cash-offer-button ."
+     ;
+}
+.company-detail{
+    grid-area: company-detail;
+}
+.about-us-h{
+    grid-area: about-us-h;
+}
+.about-us-p{
+    grid-area: about-us-p;
+}
+.cash-offer-button{
+    grid-area: cash-offer-button;
+    
+}
+.cash-offer-button a .button-detail { 
+    width: 130px;
+    height: 40px;
+    border-radius: 50px;
+}
+.cash-offer-button a .button-detail p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
