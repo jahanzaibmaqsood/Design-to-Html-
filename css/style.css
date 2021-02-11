@@ -105,7 +105,7 @@ header .nav-bar .container .nav-bar-grid .nav-items a .get-cash-button p{
 header .nav-bar .container .nav-bar-grid .cash-offer p:nth-of-type(3){
     font-size:  1rem; 
     line-height: 1;
-    letter-spacing: -1.5px;
+    letter-spacing: -1.1px;
 }
 
   hr {
@@ -121,13 +121,13 @@ header .nav-bar .container .nav-bar-grid .cash-offer p:nth-of-type(3){
   .container .hero-page-grid {
       display: grid;
       grid-template-columns: 1fr 4fr 4fr 1fr;
-      grid-template-rows:15vh 10vh 7vh 20vh 15vh 15vh ;
+      grid-template-rows:15vh 10vh 7vh 15vh 30vh;
       grid-template-areas: 
       ". hi garaph ."
       ". enter-your-post garaph ."
       ". offers-tick garaph ."
       ". paragraph garaph ."
-      ". white-bg pink-bg ."
+      "bg-graph1 bg-graph2 bg-graph3 bg-graph4"
       ;
   }
   .hi{
@@ -143,12 +143,6 @@ header .nav-bar .container .nav-bar-grid .cash-offer p:nth-of-type(3){
       justify-content: flex-start;
       align-items: center;
   }
-  .white-bg{
-      grid-area: white-bg;
-  }
-  .pink-bg{
-      grid-area: pink-bg;
-  }
   .enter-your-post{
       grid-area: enter-your-post;
       display: flex;
@@ -159,6 +153,33 @@ header .nav-bar .container .nav-bar-grid .cash-offer p:nth-of-type(3){
   .paragraph{
       grid-area: paragraph;
   }
+   .bg-graph1{
+       grid-area: bg-graph1;
+   }
+  .bg-graph2{
+     grid-area:bg-graph2 ;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 30vh;
+     grid-template-areas:
+     "paragraph2"
+      ;
+  }
+  .bg-graph2 h3{
+    grid-area:bg-graph2 ;
+  }
+  .bg-graph3{
+    grid-area:bg-graph3 ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh;
+    grid-template-areas:
+    "paragraph3"
+     ;
+ }
+ .bg-graph4{
+    grid-area: bg-graph4;
+}
 .container .hero-page-grid .hi p:nth-of-type(1){
          margin-bottom: 0rem;
 }
@@ -183,7 +204,7 @@ header .nav-bar .container .nav-bar-grid .cash-offer p:nth-of-type(3){
 
 }
 .container .hero-page-grid .garaph img{
-    height:60vh;
+    height:50vh;
 
 }
 .container .hero-page-grid .offers-tick img{
