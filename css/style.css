@@ -246,16 +246,90 @@ header .nav-bar .container .nav-bar-grid .cash-offer p:nth-of-type(3){
     
 }
 .cash-offer-button a .button-detail { 
-    width: 130px;
-    height: 40px;
+    width: 140px;
+    height: 42px;
     border-radius: 50px;
+    
 }
 .cash-offer-button a .button-detail p{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 7px;
+    text-decoration: none;
+    letter-spacing: -1px;
 }
+.about-us-grid .cash-offer-button a {
+    text-decoration: none;
+}
+.why-choose-us-grid{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 5vh 10vh 70vh 15vh;
+    grid-template-areas:
+    ". . ."
+    ". why-choose-us-h1 ."
+    ". list ."
+    ". . ."
+     ;
+}
+.list{
+    grid-area: list;
+}
+.why-choose-us-h1{
+    grid-area: why-choose-us-h1;
+}
+.why-choose-us-grid .list ul {
+    list-style-image: url(../images/Layer\ 821.png) ;
+    
+    padding-inline-start: 20px
+}
+.why-choose-us-grid .list ul li{
+   padding-top: 5px;
+   padding-left: 8px;
+}
+.how-its-work{
+    width: 100%;
+    height:auto;
+}
+.how-its-work .container .how-its-work-grid{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 3fr 1fr 1fr;
+    grid-template-rows:8vh 10vh 15vh 10vh 30vh;
+    grid-template-areas:
+    ". . . . ."
+    ". . how-its-works-h . ."
+    ". logo steps bar ."
+    ". logo button bar ."
+    ". . bar bar . ."
+     ;
+}
+.how-its-works-h{
+    grid-area: how-its-works-h;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ .logo{
+    grid-area: logo;
+}
+.steps{
+    grid-area: steps;
+}
+.bar{
+    grid-area: bar;
+}
+.button{
+    grid-area: button;
+}
+
+
+
+   
+
+
 
 
 
