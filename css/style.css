@@ -1,338 +1,344 @@
-.--fs-r{
-    font-size: 1rem;
+.--fs-r {
+  font-size: 1rem;
 }
-.--fs-m{
-    font-size: 1.5rem;
+.--fs-m {
+  font-size: 1.5rem;
 }
-.--fs-l{
-    font-size: 3.5rem;
+.--fs-l {
+  font-size: 3.5rem;
 }
-.--fw-r{
-font-weight: 400;
+.--fw-r {
+  font-weight: 400;
 }
-.--fw-m{
-    font-weight: 600;
-    }
-.--fw-l{
+.--fw-m {
+  font-weight: 600;
+}
+.--fw-l {
   font-weight: 700;
 }
-.--fw-b{
-    font-weight: bold;
+.--fw-b {
+  font-weight: bold;
 }
-.--fc-pink{
-    color: #e00273;
+.--fc-pink {
+  color: #e00273;
 }
-.--fc-blue{
-    color: #322153;
+.--fc-blue {
+  color: #322153;
 }
-.--fc-text{
-    color: #65587e
-    ;
+.--fc-text {
+  color: #65587e;
 }
-.--fc-white{
-    color: white;
+.--fc-white {
+  color: white;
 }
-.--bg-blue{
-    background-color: #322153;
+.--bg-blue {
+  background-color: #322153;
 }
-.--bg-pink{
-    background-color: #e00273;
+.--bg-pink {
+  background-color: #e00273;
 }
-.--bg-grey{
-    background-color: #f2f2f3;
+.--bg-grey {
+  background-color: #f2f2f3;
 }
-.--bg-white{
-    background-color: white;
+.--bg-white {
+  background-color: white;
 }
-html{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
-body{
-    font-family: 'Red Hat Display', sans-serif;
+body {
+  font-family: "Red Hat Display", sans-serif;
 }
 
 header .nav-bar .container .nav-bar-grid {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1.5fr;
-    grid-template-rows: 15vh;
-    grid-template-areas:
-    "logo nav-items cash-offer"
-    ;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1.5fr;
+  grid-template-rows: 15vh;
+  grid-template-areas: "logo nav-items cash-offer";
 }
 .logo {
-    grid-area: logo;
+  grid-area: logo;
 }
-header .nav-bar .container .nav-bar-grid .logo img{
-    height: 110px;
-    width: 130px;
-    
+header .nav-bar .container .nav-bar-grid .logo img {
+  height: 110px;
+  width: 130px;
 }
-header .nav-bar .container .nav-bar-grid .nav-items a{
-    padding: 0 20px 0 0;
-    text-decoration: none;
-}
-
-.nav-items{
-    grid-area: nav-items;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-header .nav-bar .container .nav-bar-grid .nav-items a .get-cash-button{
-    width: 150px;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 60px;
-}
-header .nav-bar .container .nav-bar-grid .nav-items a p{
-       margin-top: 0rem;
-         margin-bottom: 0.2rem;
-    }
-header .nav-bar .container .nav-bar-grid .nav-items a .get-cash-button p{
-      color: white;
-}   
-.cash-offer{
-    grid-area: cash-offer;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    line-height: 0.5;
-    align-items: flex-end;
-}
-header .nav-bar .container .nav-bar-grid .cash-offer p:nth-of-type(3){
-    font-size:  1rem; 
-    line-height: 1;
-    letter-spacing: -1.1px;
+header .nav-bar .container .nav-bar-grid .nav-items a {
+  padding: 0 20px 0 0;
+  text-decoration: none;
 }
 
-  hr {
-    border:none;
-    height: 20px;
-       width: 100%;
-      height: 50px;
-      margin-top: 0;
-      border-bottom: 1px solid #1f1209;
-      box-shadow: 0 0px 50px 0px #333;
-   
-  }
-  .container .hero-page-grid {
-      display: grid;
-      grid-template-columns: 1fr 4fr 4fr 1fr;
-      grid-template-rows:15vh 10vh 7vh 25vh 23vh;
-      grid-template-areas: 
-      ". hi garaph ."
-      ". enter-your-post garaph ."
-      ". offers-tick garaph ."
-      ". paragraph garaph ."
-      "bg-graph1 bg-graph2 bg-graph3 bg-graph4"
-      ;
-  }
-  .hi{
-      grid-area: hi;
-     
-  }
-  .garaph{
-      grid-area: garaph;
-  }
-  .offers-tick{
-      grid-area: offers-tick;
-      display:flex;
-      justify-content: flex-start;
-      align-items: center;
-  }
-  .enter-your-post{
-      grid-area: enter-your-post;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-  }
-  .paragraph{
-      grid-area: paragraph;
-  }
-   .bg-graph1{
-       grid-area: bg-graph1;
-   }
-  .bg-graph2{
-     grid-area:bg-graph2 ;
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: 23vh;
-     grid-template-areas:
-     "paragraph2"
-      ;
-  }
-  
+.nav-items {
+  grid-area: nav-items;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .nav-bar .container .nav-bar-grid .nav-items a .get-cash-button {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+}
+header .nav-bar .container .nav-bar-grid .nav-items a p {
+  margin-top: 0rem;
+  margin-bottom: 0.2rem;
+}
+header .nav-bar .container .nav-bar-grid .nav-items a .get-cash-button p {
+  color: white;
+}
+.cash-offer {
+  grid-area: cash-offer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  line-height: 0.5;
+  align-items: flex-end;
+}
+header .nav-bar .container .nav-bar-grid .cash-offer p:nth-of-type(3) {
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: -1.1px;
+}
 
-  .bg-graph3{
-    grid-area:bg-graph3 ;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 23vh;
-    grid-template-areas:
-    "paragraph3"
-     ;
- }
- .container .hero-page-grid .bg-graph3 .time{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
- }
- .bg-graph4{
-    grid-area: bg-graph4;
+hr {
+  border: none;
+  height: 20px;
+  width: 100%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 0px 50px 0px #333;
 }
-.container .hero-page-grid .hi p:nth-of-type(1){
-         margin-bottom: 0rem;
+.container .hero-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-rows: 15vh 10vh 7vh 25vh 23vh;
+  grid-template-areas:
+    ". hi garaph ."
+    ". enter-your-post garaph ."
+    ". offers-tick garaph ."
+    ". paragraph garaph ."
+    "bg-graph1 bg-graph2 bg-graph3 bg-graph4";
 }
-.container .hero-page-grid .hi p:nth-of-type(2){
-    line-height: 1;
-    margin-bottom: 0rem;
+.hi {
+  grid-area: hi;
 }
-.container .hero-page-grid .enter-your-post .input-group input{
-    
-    background-color: #fae5f1;
+.garaph {
+  grid-area: garaph;
+}
+.offers-tick {
+  grid-area: offers-tick;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.enter-your-post {
+  grid-area: enter-your-post;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.paragraph {
+  grid-area: paragraph;
+}
+.bg-graph1 {
+  grid-area: bg-graph1;
+}
+.bg-graph2 {
+  grid-area: bg-graph2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 23vh;
+  grid-template-areas: "paragraph2";
+}
 
+.bg-graph3 {
+  grid-area: bg-graph3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 23vh;
+  grid-template-areas: "paragraph3";
+}
+.container .hero-page-grid .bg-graph3 .time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bg-graph4 {
+  grid-area: bg-graph4;
+}
+.container .hero-page-grid .hi p:nth-of-type(1) {
+  margin-bottom: 0rem;
+}
+.container .hero-page-grid .hi p:nth-of-type(2) {
+  line-height: 1;
+  margin-bottom: 0rem;
+}
+.container .hero-page-grid .enter-your-post .input-group input {
+  background-color: #fae5f1;
 }
 .container .hero-page-grid .enter-your-post .input-group {
-    width: 75%;
-    border-radius: 40px;
+  width: 75%;
+  border-radius: 40px;
 }
-.container .hero-page-grid .enter-your-post .input-group .btn{
-    width: 70px;
-    background-color: #f87100;
-    color: white;
-    font-weight: 500;
-
+.container .hero-page-grid .enter-your-post .input-group .btn {
+  width: 70px;
+  background-color: #f87100;
+  color: white;
+  font-weight: 500;
 }
-.container .hero-page-grid .garaph img{
-    height:50vh;
-
+.container .hero-page-grid .garaph img {
+  height: 50vh;
 }
-.container .hero-page-grid .offers-tick img{
-    height: 25px;
+.container .hero-page-grid .offers-tick img {
+  height: 25px;
 }
-.container .hero-page-grid .offers-tick p{
-    margin-bottom: -0.5rem;
+.container .hero-page-grid .offers-tick p {
+  margin-bottom: -0.5rem;
 }
 .container .about-us-grid {
-    display: grid;
-    grid-template-columns: 1fr 2.5fr 5.5fr 1fr;
-    grid-template-rows: 7vh 8vh 70vh 15vh;
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 5.5fr 1fr;
+  grid-template-rows: 7vh 8vh 70vh 15vh;
+  grid-template-areas:
     ". . . ."
     ". . about-us-h ."
     ". company-detail about-us-p ."
-    ". .  cash-offer-button ."
-     ;
+    ". .  cash-offer-button .";
 }
-.company-detail{
-    grid-area: company-detail;
+.company-detail {
+  grid-area: company-detail;
 }
-.about-us-h{
-    grid-area: about-us-h;
+.about-us-h {
+  grid-area: about-us-h;
 }
-.about-us-p{
-    grid-area: about-us-p;
+.about-us-p {
+  grid-area: about-us-p;
 }
-.cash-offer-button{
-    grid-area: cash-offer-button;
-    
+.cash-offer-button {
+  grid-area: cash-offer-button;
 }
-.cash-offer-button a .button-detail { 
-    width: 140px;
-    height: 42px;
-    border-radius: 50px;
-    
+.cash-offer-button a .button-detail {
+  width: 140px;
+  height: 42px;
+  border-radius: 50px;
 }
-.cash-offer-button a .button-detail p{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 7px;
-    text-decoration: none;
-    letter-spacing: -1px;
+.cash-offer-button a .button-detail p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7px;
+  text-decoration: none;
+  letter-spacing: -1px;
 }
 .about-us-grid .cash-offer-button a {
-    text-decoration: none;
+  text-decoration: none;
 }
-.why-choose-us-grid{
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 5vh 10vh 70vh 15vh;
-    grid-template-areas:
+.why-choose-us-grid {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 5vh 10vh 70vh 15vh;
+  grid-template-areas:
     ". . ."
     ". why-choose-us-h1 ."
     ". list ."
-    ". . ."
-     ;
+    ". . .";
 }
-.list{
-    grid-area: list;
+.list {
+  grid-area: list;
 }
-.why-choose-us-h1{
-    grid-area: why-choose-us-h1;
+.why-choose-us-h1 {
+  grid-area: why-choose-us-h1;
 }
 .why-choose-us-grid .list ul {
-    list-style-image: url(../images/Layer\ 821.png) ;
-    
-    padding-inline-start: 20px
+  list-style-image: url(../images/Layer\ 821.png);
+
+  padding-inline-start: 20px;
 }
-.why-choose-us-grid .list ul li{
-   padding-top: 5px;
-   padding-left: 8px;
+.why-choose-us-grid .list ul li {
+  padding-top: 5px;
+  padding-left: 8px;
 }
-.how-its-work{
-    width: 100%;
-    height:auto;
+.how-its-work {
+  width: 100%;
+  height: auto;
 }
-.how-its-work .container .how-its-work-grid{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 3fr 1fr 1fr;
-    grid-template-rows:8vh 10vh 15vh 10vh 30vh;
-    grid-template-areas:
+.how-its-work .container .how-its-work-grid {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 3fr 1fr 1fr;
+  grid-template-rows: 8vh 10vh 15vh 10vh 30vh;
+  grid-template-areas:
     ". . . . ."
     ". . how-its-works-h . ."
     ". logo steps bar ."
     ". logo button bar ."
-    ". . bar bar . ."
-     ;
+    ". . bar bar . .";
 }
-.how-its-works-h{
-    grid-area: how-its-works-h;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.how-its-works-h {
+  grid-area: how-its-works-h;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  grid-area: logo;
+}
+.steps {
+  grid-area: steps;
+}
+.bar {
+  grid-area: bar;
+}
+.button {
+  grid-area: button;
+}
+
+@media (max-width: 992px) {
+  #hamBurger {
+    display: flex !important;
     align-items: center;
+    grid-area: cash-offer;
+    cursor: pointer;
+  }
+  .hamburger-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+  }
+  #hamBurger span {
+    border-top: 3px solid #000;
+    width: 20px;
+    display: block;
+    margin-top: 3px;
+  }
+  .cash-offer-inner {
+    display: none;
+  }
+  .collapsed-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 500px;
+    background: white;
+    padding: 1.5rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    top: -500px;
+    transition: 0.4s all;
+  }
+  .collapsed-menu-show {
+    top: 20px;
+    box-shadow: 0px 0px 5px 5px #ccc;
+  }
 }
- .logo{
-    grid-area: logo;
-}
-.steps{
-    grid-area: steps;
-}
-.bar{
-    grid-area: bar;
-}
-.button{
-    grid-area: button;
-}
-
-
-
-   
-
-
-
-
-
-
-
-  
