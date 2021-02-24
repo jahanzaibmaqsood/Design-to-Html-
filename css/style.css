@@ -275,36 +275,81 @@ hr {
 }
 .how-its-work .container .how-its-work-grid {
   display: grid;
-  grid-template-columns: 0.5fr 1fr 3fr 1fr 1fr;
+  grid-template-columns: 0.2fr 0.7fr 3fr 0.3fr 0.5fr;
   grid-template-rows: 8vh 10vh 15vh 10vh 30vh;
   grid-template-areas:
-    ". . . . ."
-    ". . how-its-works-h . ."
-    ". logo steps bar ."
-    ". logo button bar ."
-    ". . bar bar . .";
+  ". . . . ."
+  ". how-its-work-h3 how-its-work-h3 how-its-work-h3 ."
+  ". logo2 steps . ."
+  ". logo2 button2 . ."
+  ". . graph2 . ."
+  ;
 }
-.how-its-works-h {
-  grid-area: how-its-works-h;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.how-its-work-h3{
+    grid-area: how-its-work-h3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
 }
-.logo {
-  grid-area: logo;
+.how-its-work .container .steps p{
+    line-height:0.5;
 }
-.steps {
-  grid-area: steps;
+.logo2{
+    grid-area: logo2;
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
 }
-.bar {
-  grid-area: bar;
+.how-its-work .container .logo2 img{
+    width: 130px;
+    height: 150px;
 }
-.button {
-  grid-area: button;
+.steps{
+    grid-area: steps;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.how-its-work .container .steps img{
+    position: absolute !important;
+    width: 350px;
+    height: 350px;
+   top: -30px;
+   bottom: 10px;
+   left: 350px;
+
 }
 
-@media (max-width: 992px) {
+.graph2{
+    grid-area: graph2;
+}
+.button2{
+    grid-area: button2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+}
+.how-its-work .container .button2 a{
+    text-decoration:none;
+}
+.how-its-work .container .button2  a .offer-button {
+    width: 140px;
+    height: 42px;
+    border-radius: 50px;
+} 
+
+.how-its-work .container .button2 a .offer-button p{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    letter-spacing:-1px;
+}
+  
+@media screen and (max-width: 768px) {
   #hamBurger {
     display: flex !important;
     align-items: center;
@@ -326,6 +371,7 @@ hr {
     display: none;
   }
   .collapsed-menu {
+      display: block !important;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -341,4 +387,5 @@ hr {
     top: 20px;
     box-shadow: 0px 0px 5px 5px #ccc;
   }
+  
 }
