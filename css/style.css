@@ -348,6 +348,32 @@ hr {
     align-items:center;
     letter-spacing:-1px;
 }
+.reviews{
+  width: 100%;
+  height: auto;
+}
+.reviews .container .reviews-h1{
+  padding-top: 10vh;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+
+}
+.reviews .container .reviews-h1 h1{
+  font-size: 3rem;
+  margin-bottom: 0px;
+}
+.reviews .container .reviews-h1 p{
+  letter-spacing: -1px;
+  
+}
+.reviews .container .reviews-slider{
+  width: 100%;
+  padding-top: 15vh;
+}
+
+
   
 @media screen and (max-width: 768px) {
   #hamBurger {
