@@ -372,7 +372,48 @@ hr {
   width: 100%;
   padding-top: 15vh;
 }
+.faqs-view .container .faqs-h1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.faqs-view .container .faqs-h1 h1{
+  letter-spacing: 3px;
 
+}
+.faqs-view .container .clps-grid{
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 60vh;
+  grid-template-areas:
+  ". clps-grid-items ."   ;
+}
+.clps-grid-items{
+  grid-area:clps-grid-items;
+}
+footer{
+  width: 100%;
+  height: 100vh;
+}
+footer .container .footer-grid{
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-rows: 40vh 40vh;
+  grid-template-areas:
+  ". get-your-h3 form ."
+  ". bg-white form .";
+}
+.get-your-h3{
+  grid-area: get-your-h3;
+}
+.form{
+  grid-area: form;
+}
+.bg-white{
+  grid-area:bg-white;
+}
 
   
 @media screen and (max-width: 768px) {
