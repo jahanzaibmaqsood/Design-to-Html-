@@ -407,7 +407,33 @@ footer .container .footer-grid {
 .bg-white {
   grid-area: bg-white;
 }
+/* Slider styles */
 
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-dots {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  margin: 10px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li {
+  background: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+.slick-dots button {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   #hamBurger {
     display: flex !important;
@@ -448,30 +474,4 @@ footer .container .footer-grid {
   }
 }
 
-/* Slider styles */
 
-.slick-arrow {
-  display: none !important;
-}
-
-.slick-dots {
-  list-style: none;
-  padding: 0px;
-  display: flex;
-  margin: 10px 0px;
-  justify-content: center;
-  align-items: center;
-}
-
-.slick-dots li {
-  background: black;
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  margin: 0px 2px;
-  cursor: pointer;
-}
-
-.slick-dots button {
-  display: none;
-}
