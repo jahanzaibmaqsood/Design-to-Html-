@@ -278,144 +278,136 @@ hr {
   grid-template-columns: 0.2fr 0.7fr 3fr 0.3fr 0.5fr;
   grid-template-rows: 8vh 10vh 15vh 10vh 30vh;
   grid-template-areas:
-  ". . . . ."
-  ". how-its-work-h3 how-its-work-h3 how-its-work-h3 ."
-  ". logo2 steps . ."
-  ". logo2 button2 . ."
-  ". . graph2 . ."
-  ;
+    ". . . . ."
+    ". how-its-work-h3 how-its-work-h3 how-its-work-h3 ."
+    ". logo2 steps . ."
+    ". logo2 button2 . ."
+    ". . graph2 . .";
 }
-.how-its-work-h3{
-    grid-area: how-its-work-h3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:flex-start;
+.how-its-work-h3 {
+  grid-area: how-its-work-h3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
-.how-its-work .container .steps p{
-    line-height:0.5;
+.how-its-work .container .steps p {
+  line-height: 0.5;
 }
-.logo2{
-    grid-area: logo2;
-    display: flex;
-    flex-direction:row;
-    justify-content:flex-start;
+.logo2 {
+  grid-area: logo2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
-.how-its-work .container .logo2 img{
-    width: 130px;
-    height: 150px;
+.how-its-work .container .logo2 img {
+  width: 130px;
+  height: 150px;
 }
-.steps{
-    grid-area: steps;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
+.steps {
+  grid-area: steps;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.how-its-work .container .steps img{
-    position: absolute !important;
-    width: 350px;
-    height: 350px;
-   top: -30px;
-   bottom: 10px;
-   left: 350px;
-
+.how-its-work .container .steps img {
+  position: absolute !important;
+  width: 350px;
+  height: 350px;
+  top: -30px;
+  bottom: 10px;
+  left: 350px;
 }
 
-.graph2{
-    grid-area: graph2;
+.graph2 {
+  grid-area: graph2;
 }
-.button2{
-    grid-area: button2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
+.button2 {
+  grid-area: button2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.how-its-work .container .button2 a{
-    text-decoration:none;
+.how-its-work .container .button2 a {
+  text-decoration: none;
 }
-.how-its-work .container .button2  a .offer-button {
-    width: 140px;
-    height: 42px;
-    border-radius: 50px;
-} 
+.how-its-work .container .button2 a .offer-button {
+  width: 140px;
+  height: 42px;
+  border-radius: 50px;
+}
 
-.how-its-work .container .button2 a .offer-button p{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items:center;
-    letter-spacing:-1px;
+.how-its-work .container .button2 a .offer-button p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -1px;
 }
-.reviews{
+.reviews {
   width: 100%;
   height: auto;
 }
-.reviews .container .reviews-h1{
+.reviews .container .reviews-h1 {
   padding-top: 10vh;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
-.reviews .container .reviews-h1 h1{
+.reviews .container .reviews-h1 h1 {
   font-size: 3rem;
   margin-bottom: 0px;
 }
-.reviews .container .reviews-h1 p{
+.reviews .container .reviews-h1 p {
   letter-spacing: -1px;
-  
 }
-.reviews .container .reviews-slider{
+.reviews .container .reviews-slider {
   width: 100%;
   padding-top: 15vh;
 }
-.faqs-view .container .faqs-h1{
+.faqs-view .container .faqs-h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.faqs-view .container .faqs-h1 h1{
+.faqs-view .container .faqs-h1 h1 {
   letter-spacing: 3px;
-
 }
-.faqs-view .container .clps-grid{
+.faqs-view .container .clps-grid {
   padding-top: 20px;
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 60vh;
-  grid-template-areas:
-  ". clps-grid-items ."   ;
+  grid-template-areas: ". clps-grid-items .";
 }
-.clps-grid-items{
-  grid-area:clps-grid-items;
+.clps-grid-items {
+  grid-area: clps-grid-items;
 }
-footer{
+footer {
   width: 100%;
   height: 100vh;
 }
-footer .container .footer-grid{
+footer .container .footer-grid {
   display: grid;
   grid-template-columns: 1fr 4fr 4fr 1fr;
   grid-template-rows: 40vh 40vh;
   grid-template-areas:
-  ". get-your-h3 form ."
-  ". bg-white form .";
+    ". get-your-h3 form ."
+    ". bg-white form .";
 }
-.get-your-h3{
+.get-your-h3 {
   grid-area: get-your-h3;
 }
-.form{
+.form {
   grid-area: form;
 }
-.bg-white{
-  grid-area:bg-white;
+.bg-white {
+  grid-area: bg-white;
 }
 
-  
 @media screen and (max-width: 768px) {
   #hamBurger {
     display: flex !important;
@@ -438,7 +430,7 @@ footer .container .footer-grid{
     display: none;
   }
   .collapsed-menu {
-      display: block !important;
+    display: block !important;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -454,5 +446,32 @@ footer .container .footer-grid{
     top: 20px;
     box-shadow: 0px 0px 5px 5px #ccc;
   }
-  
+}
+
+/* Slider styles */
+
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-dots {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  margin: 10px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li {
+  background: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+.slick-dots button {
+  display: none;
 }
