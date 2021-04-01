@@ -271,7 +271,7 @@ hr {
 }
 .how-its-work {
   width: 100%;
-  height: auto;
+  height: 80vh;
 }
 .how-its-work .container .how-its-work-grid {
   display: grid;
@@ -367,7 +367,90 @@ hr {
   width: 100%;
   padding-top: 15vh;
 }
+.my-slider-grid .my-slider{
+  margin:0 15px 0 15px;
+}
+.my-slider-grid{
+  padding-top: 10vh;
+  display: grid;
+  grid-template-columns: 1.2fr 8fr 1.2fr;
+  grid-template-rows: 30vh;
+  grid-template-areas: 
+  ". my-slider .";
+}
+.my-slider{
+  grid-area: my-slider;
+}
+.my-slider-grid .my-slider .bg-primary{
+ background-color:white !important;
+ height: 30vh;
+}
+.my-slider-grid .my-slider .bg-primary .bg-primary-grid{
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows:5vh 5vh 5vh ;
+  grid-template-areas:
+   ". ." 
+   "first-review mr-banks"
+   "st-helen ."
+  ;
+}
+.first-review{
+  grid-area: first-review;
+}
+.mr-banks{
+  grid-area: mr-banks;
+}
+.st-helen{
+  grid-area: st-helen;
+}
+.my-slider-grid .my-slider .bg-secondary{
+  background-color:white !important;
+  height: 30vh;
+ }
+ .my-slider-grid .my-slider .bg-danger{
+  background-color:white !important;
+  height: 30vh;
+ }
+
+/* Slider styles */
+
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-dots {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  margin: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  bottom: -40px;
+}
+
+.slick-dots li {
+  background: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin: 0px 3px;
+  cursor: pointer;
+}
+
+.slick-dots button {
+  display: none;
+  font-size: 0px;
+}
+.slick-dots li button::before{
+  font-size: 0px;
+}
+.checked {
+  color:#5ea511;
+}
+
 .faqs-view .container .faqs-h1 {
+  padding-top: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -386,15 +469,23 @@ hr {
 .clps-grid-items {
   grid-area: clps-grid-items;
 }
-footer {
+.bottom-form{
   width: 100%;
   height: 100vh;
 }
-footer .container .footer-grid {
+.bottom-form .bg-pink{
+  width:100%;
+  height: 50vh;
+  position:absolute;
+}
+
+.bottom-form .container .bottom-form-grid {
   display: grid;
-  grid-template-columns: 1fr 4fr 4fr 1fr;
-  grid-template-rows: 40vh 40vh;
+  position: relative;
+  grid-template-columns: 1fr 4fr  4fr 1fr;
+  grid-template-rows: 10vh 40vh 20vh;
   grid-template-areas:
+    ". . . ."
     ". get-your-h3 form ."
     ". bg-white form .";
 }
@@ -402,38 +493,47 @@ footer .container .footer-grid {
   grid-area: get-your-h3;
 }
 .form {
+  padding-top: 60px;
   grid-area: form;
+  background-color: white !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+.form .form-group .form-control{
+  width: 370px;
+  height: 30px;
+  border-radius: 50px;
+  background-color:#efefef !important ;
+}
+.form  a .get-cash-button {
+  width: 140px;
+  height: 42px;
+  border-radius: 50px;
+}
+.form  a{
+  text-decoration: none;
+}
+.form  a .get-cash-button p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7px;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
 .bg-white {
   grid-area: bg-white;
 }
-/* Slider styles */
-
-.slick-arrow {
-  display: none !important;
+.bottom-form .container .btm-discription{
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  background-color: thistle;
 }
 
-.slick-dots {
-  list-style: none;
-  padding: 0px;
-  display: flex;
-  margin: 10px 0px;
-  justify-content: center;
-  align-items: center;
-}
-
-.slick-dots li {
-  background: black;
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  margin: 0px 2px;
-  cursor: pointer;
-}
-
-.slick-dots button {
-  display: none;
-}
 @media screen and (max-width: 768px) {
   #hamBurger {
     display: flex !important;
